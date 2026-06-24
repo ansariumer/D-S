@@ -74,19 +74,22 @@ public class Player : MonoBehaviour
     private Vector3 targetScale = new Vector2(0.7f, 1f);
     [SerializeField] private float smoothspeed = 5f;
 
-    public GameObject trail;
+    private TrailRenderer trail;
+    [SerializeField] private float FadeOutTime = 0.2f;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         originalScale = transform.localScale;
+
+        trail = GetComponentInChildren<TrailRenderer>();
     }
 
     void Update()
     {
         if (!isDashing)
         {
-            trail.SetActive(false);
+            trail.time = FadeOutTime;
             transform.localScale = Vector3.Lerp(transform.localScale, originalScale, smoothspeed * Time.deltaTime);
             moveInput = joystickMove.Direction;
 
@@ -100,7 +103,7 @@ public class Player : MonoBehaviour
         if (isDashing)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, targetScale, smoothspeed * Time.deltaTime);
-            trail.SetActive(true);
+            trail.time = dashTime;
             rb.linearVelocity = dashVelocity;
             return;
         }
