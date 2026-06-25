@@ -24795,7 +24795,7 @@ IL_0019:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 36697
+// Method Definition Index: 36702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m655CD8122577F0ED360B7C54DA91DFF2604EF71C_gshared (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24839,7 +24839,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 36698
+// Method Definition Index: 36703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m2A23779CEF3505F1F8031A09BA62A27C0AE07E67_gshared (LocalToWorldAndChangeDetectionTransformAccessJob_t958B0C4D12BB629333A3F2941507C705E4D26D56* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	TransformJobData_tF0FA739C70A77D3F16E9ACC8A1284993D31DAC0F V_0;
@@ -25020,7 +25020,7 @@ IL_010d:
 		return;
 	}
 }
-// Method Definition Index: 36699
+// Method Definition Index: 36704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m1C2F45ADD86FA68D65E0D5D80A6230DE80A349EF_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -25038,7 +25038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 36697
+// Method Definition Index: 36702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m37B976CCBDDCE10DC94AEEFF8513D8DBA92EB7B8_gshared (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25082,7 +25082,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 36698
+// Method Definition Index: 36703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m0BB4A8A1BBC003BE9566FF0659DC5ED0BC4E56CA_gshared (WorldToLocalTransformAccessJob_tFE2332659D5ADE233AC4C8E613ACE9D442FA1EE2* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	TransformJobData_tC09C505CEDDC05FECD47EA67F80E1C58CC6D11DC V_0;
@@ -25263,7 +25263,7 @@ IL_010d:
 		return;
 	}
 }
-// Method Definition Index: 36699
+// Method Definition Index: 36704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_mFEB8BEE90C374BB0864146EFB8FBFFEB889A03A1_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -25281,7 +25281,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 36697
+// Method Definition Index: 36702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_mDADD72EAC54942A34EED7A04285200B518096055_gshared (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25325,7 +25325,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 36698
+// Method Definition Index: 36703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m2C4E058B9EC1B10C2BB3860F8FFDEAF691C7AE3B_gshared (Il2CppFullySharedGenericStruct* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	void* L_30 = alloca(Il2CppFakeBoxBuffer::SizeNeededFor(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 10)));
@@ -25508,7 +25508,7 @@ IL_010d:
 		return;
 	}
 }
-// Method Definition Index: 36699
+// Method Definition Index: 36704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m46A376B5F4C2AE7512F9DC5C283D41DE2B552D92_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -25526,7 +25526,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 36697
+// Method Definition Index: 36702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m67D9A98C9E81DF92CD6BC6B363F35B5006EAEE76_gshared (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25570,7 +25570,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 36698
+// Method Definition Index: 36703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m5EF361D0BD353203AA224B1D7383DE3C31283243_gshared (UpdateTransformsJob_t7CF957169E8C6560084F48A51BC15A447F3002C7* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25759,7 +25759,7 @@ IL_010d:
 		return;
 	}
 }
-// Method Definition Index: 36699
+// Method Definition Index: 36704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m5E4C3DB72AE390CA7C34D2F62A1588198C553AFC_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -25777,7 +25777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 36697
+// Method Definition Index: 36702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m5C52754A03933356156CC14A140434DEB4724FA2_gshared (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25821,7 +25821,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 36698
+// Method Definition Index: 36703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m5C14D50A304C76BB4519F4318B098D6386E9A545_gshared (FastWriteTransformsJob_t0C6265A3E284D5CB97AEFF0CBDE615956100CA42* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	TransformJobData_t93C16F6162F0A98CA8BF7DD2A01CC9EB1E0E6477 V_0;
@@ -26002,7 +26002,7 @@ IL_010d:
 		return;
 	}
 }
-// Method Definition Index: 36699
+// Method Definition Index: 36704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m8A3D197619E4BBC4C1DD9BE2FEB7DB79D25FC14B_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -26020,7 +26020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 36697
+// Method Definition Index: 36702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_mF90231CF81050FE29D40B705394B9B549105651D_gshared (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26064,7 +26064,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 36698
+// Method Definition Index: 36703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_mDCE9AB511E4DAEB29A7E07A04DBB1C5D94AF4A33_gshared (Slow3DWriteTransformsJob_t01D62375DE34631AE04D67F49B90140DF12FC369* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	TransformJobData_t40D92BF001869836E042C6ECBF855F03E9797929 V_0;
@@ -26245,7 +26245,7 @@ IL_010d:
 		return;
 	}
 }
-// Method Definition Index: 36699
+// Method Definition Index: 36704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m2902FA07D655E2BC971129210C1635B27897124C_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -26263,7 +26263,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 36697
+// Method Definition Index: 36702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_mA99322D420D2320DE116A62C584B140AFEFE3960_gshared (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26307,7 +26307,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 36698
+// Method Definition Index: 36703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m294486B2EFBCD9D891C4BBE7D0338D4EEEC482C0_gshared (WriteTransformTweensJob_t7CF658581EF0F1630C26CCB405A537B666C01187* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	TransformJobData_tE58EC3AD1A2B8DA89B4C00E8BB325624CA1DCB54 V_0;
@@ -26488,7 +26488,7 @@ IL_010d:
 		return;
 	}
 }
-// Method Definition Index: 36699
+// Method Definition Index: 36704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m7737EE9B3EE7A2A2110DF204C0F3B66DA5C57C27_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -32940,7 +32940,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 36943
+// Method Definition Index: 36948
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ObjectPool_1_Get_m239BB169D8FEF3A2694E9A961C473D3807D67D89_gshared_inline (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
@@ -33065,7 +33065,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get
 		return L_0;
 	}
 }
-// Method Definition Index: 36945
+// Method Definition Index: 36950
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ObjectPool_1_Release_m71F1CADB7AD9CC20BD824583A3675A4260965DB5_gshared_inline (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, RuntimeObject* ___0_element, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -33791,7 +33791,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C
 		return L_0;
 	}
 }
-// Method Definition Index: 36939
+// Method Definition Index: 36944
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ObjectPool_1_get_CountAll_mF3CDC0B64D5037106573C6CEE921EAF0A8B3C8EB_gshared_inline (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, const RuntimeMethod* method) 
 {
 	{
@@ -33799,7 +33799,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ObjectPool_1_get_CountAll
 		return L_0;
 	}
 }
-// Method Definition Index: 36940
+// Method Definition Index: 36945
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ObjectPool_1_set_CountAll_mED1939CDEBB184383799328A0C1AEC9E1D2960D9_gshared_inline (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{

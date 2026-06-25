@@ -134,6 +134,7 @@ struct Terrain_t7F309492F67238DBFBC4566F47385B2A665CF667;
 struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 struct TileBase_t07019BD771D35E8EA68118157D6EEE4C770CF0F9;
 struct Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751;
+struct TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39;
 struct VFXEventAttribute_tA764A595356174BA39C782A8A64B47B39FB3F518;
 struct VisualEffectAsset_t0CD57FD9980CD68033BD96DA356697F92A69E688;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
@@ -5341,7 +5342,8 @@ struct Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74  : public MonoBehaviour_
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___originalScale;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___targetScale;
 	float ___smoothspeed;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trail;
+	TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* ___trail;
+	float ___FadeOutTime;
 };
 struct Tilemap_t18C4166D0AC702D5BFC0C411FA73C4B61D9D1751  : public GridLayout_tAD661B1E1E57C16BE21C8C13432EA04FE1F0418B
 {
@@ -6945,9 +6947,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9595[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9597[4] = 
 {
 	static_cast<int32_t>(offsetof(JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193, ___handle)),static_cast<int32_t>(offsetof(JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193, ___background)),static_cast<int32_t>(offsetof(JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193, ___U3CDirectionU3Ek__BackingField)),static_cast<int32_t>(offsetof(JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193, ___radius)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9598[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9598[14] = 
 {
-	static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___joystickMove)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dashController)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___speed)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dash)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dashTime)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___isDashing)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rb)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___moveInput)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dashVelocity)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___originalScale)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___targetScale)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___smoothspeed)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___trail)),};
+	static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___joystickMove)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dashController)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___speed)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dash)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dashTime)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___isDashing)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rb)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___moveInput)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dashVelocity)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___originalScale)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___targetScale)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___smoothspeed)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___trail)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___FadeOutTime)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9599[3] = 
 {
 	static_cast<int32_t>(offsetof(U3CStopDashU3Ed__11_t0B49531C08195620AA1AA467C3A74F121F8A0334, ___U3CU3E1__state)),static_cast<int32_t>(offsetof(U3CStopDashU3Ed__11_t0B49531C08195620AA1AA467C3A74F121F8A0334, ___U3CU3E2__current)),static_cast<int32_t>(offsetof(U3CStopDashU3Ed__11_t0B49531C08195620AA1AA467C3A74F121F8A0334, ___U3CU3E4__this)),};

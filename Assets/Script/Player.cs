@@ -1,58 +1,3 @@
-/*using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Player : MonoBehaviour
-{
-    public JoystickController joystickMove;
-    public DashController dashController;
-    public float speed = 10f;
-    public float dash = 20f;
-    public float dashTime = 0.5f;
-    public bool isDashing;
-    public Rigidbody2D rb;
-
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        isDashing = false;
-    }
-
-    void Update()
-    {
-        if (isDashing == false)
-        {
-            Movement();
-        }
-    }
-
-    public void Movement()
-    {
-        rb.linearVelocity = joystickMove.Direction * speed;
-        
-        if (rb.linearVelocity != Vector2.zero)
-        {
-            transform.up = rb.linearVelocity;
-        }
-        isDashing = false;
-    }
-
-    public void Dash(Vector2 dir)
-    {
-        if (dir == Vector2.zero) return;
-
-        StartCoroutine(DashDuration());
-        isDashing = true;
-        transform.up = dir;
-        rb.linearVelocity = dir * dash;
-    }
-
-    private IEnumerator DashDuration()
-    {
-        yield return new WaitForSeconds(dashTime);
-        isDashing = false;
-    }
-}*/
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -83,6 +28,7 @@ public class Player : MonoBehaviour
         originalScale = transform.localScale;
 
         trail = GetComponentInChildren<TrailRenderer>();
+        trail.emitting = false;
     }
 
     void Update()
@@ -103,7 +49,6 @@ public class Player : MonoBehaviour
         if (isDashing)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, targetScale, smoothspeed * Time.deltaTime);
-            trail.time = dashTime;
             rb.linearVelocity = dashVelocity;
             return;
         }
@@ -119,12 +64,18 @@ public class Player : MonoBehaviour
         dashVelocity = dir * dash;
         transform.up = dir;
 
+        trail.time = dashTime;
+        trail.emitting = true;
+
         Invoke(nameof(StopDash), dashTime);
     }
 
     void StopDash()
     {
         isDashing = false;
+
+        trail.emitting = false;
+        trail.time = FadeOutTime;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
