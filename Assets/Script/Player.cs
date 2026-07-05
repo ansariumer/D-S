@@ -3,7 +3,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public JoystickController joystickMove;
-    public DashController dashController;
 
     public float speed = 10f;
     public float dash = 20f;
@@ -32,7 +31,7 @@ public class Player : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
         if (!isDashing)
         {
             trail.time = FadeOutTime;
@@ -56,20 +55,17 @@ public class Player : MonoBehaviour
         rb.linearVelocity = moveInput * speed;
     }
 
-    public void Dash(Vector2 dir)
-    {
-        if (dir == Vector2.zero) return;
-
+    public void Dash()
+    { 
         isDashing = true;
-        dashVelocity = dir * dash;
-        transform.up = dir;
+        dashVelocity = moveInput * dash;
 
         trail.time = dashTime;
         trail.emitting = true;
 
         Invoke(nameof(StopDash), dashTime);
     }
-
+    
     void StopDash()
     {
         isDashing = false;

@@ -1122,6 +1122,7 @@ UnityEngine.Object::FindObjectFromInstanceID_Injected
 UnityEngine.Object::ForceLoadFromInstanceID_Injected
 UnityEngine.Object::Internal_CloneSingleWithParent_Injected
 UnityEngine.Object::Internal_CloneSingle_Injected
+UnityEngine.Object::Internal_InstantiateSingle_Injected
 UnityEngine.Object::DestroyImmediate_Injected
 UnityEngine.Object::Destroy_Injected
 UnityEngine.Object::DontDestroyOnLoad_Injected
@@ -1269,7 +1270,6 @@ UnityEngine.Quaternion::Internal_AngleAxis_Injected
 UnityEngine.Quaternion::Internal_FromEulerRad_Injected
 UnityEngine.Quaternion::Internal_FromToRotation_Injected
 UnityEngine.Quaternion::Internal_Inverse_Injected
-UnityEngine.Quaternion::Internal_Lerp_Injected
 UnityEngine.Quaternion::Internal_LookRotation_Injected
 UnityEngine.Quaternion::Internal_SlerpUnclamped_Injected
 UnityEngine.Quaternion::Internal_Slerp_Injected

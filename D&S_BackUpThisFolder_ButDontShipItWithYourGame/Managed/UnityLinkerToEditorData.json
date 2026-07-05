@@ -1069,7 +1069,7 @@
           {
             "name": "Collider",
             "scenes": [],
-            "dependencyType": 0,
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -1127,6 +1127,14 @@
         "dependencies": [
           {
             "name": "BoxCollider2D",
+            "scenes": [
+              "Assets/Scenes/SampleScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "CircleCollider2D",
             "scenes": [
               "Assets/Scenes/SampleScene.unity"
             ],
