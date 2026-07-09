@@ -51,6 +51,7 @@
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\dashButton.cs" />
     <Compile Include="Assets\Script\shootButton.cs" />
+    <Compile Include="Assets\Script\bulletPooling.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
     <Compile Include="Assets\Script\JoystickController.cs" />
