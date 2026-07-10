@@ -12,6 +12,13 @@ extern void AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490 (void)
 extern void Bullet_Update_m5AA63D0B1F389C2CFEE77466E1C39ADC813B4DBC (void);
 extern void Bullet_OnTriggerEnter2D_mC3642C0546BCF5AFC8036C6B77D66560C04685E8 (void);
 extern void Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA (void);
+extern void BulletParPooling_Awake_m02378DF7A8C9285EDF2D9D79CCE12BE6EDE2498D (void);
+extern void BulletParPooling_Start_m01B972DB69DFBD891536CB866304619E38A9F1AE (void);
+extern void BulletParPooling_GetPoolObject_m53553C21945FB4E5929A1E6EDB0E5218D79E433A (void);
+extern void BulletParPooling__ctor_m1C534885F5668901C3415F505F0CD762CB036D5D (void);
+extern void BulletParticleDisable_Awake_m6600E740231A2CC7D9342AB90BFE5F6A081E1430 (void);
+extern void BulletParticleDisable_Update_mC8879A55F2A5C8DE96D50E6CC5EA6DEB9BCFABE8 (void);
+extern void BulletParticleDisable__ctor_m6609F696F695D4372F97300A279A1F16F5B047A9 (void);
 extern void Enemy_TakeDamage_mFC3B669129AD870E4B66062CE726585528F8701D (void);
 extern void Enemy__ctor_mB6697627910F785A971C20C671DEFBA9D921D933 (void);
 extern void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (void);
@@ -47,13 +54,20 @@ extern void shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9 (void);
 extern void shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[40] = 
+static Il2CppMethodPointer s_methodPointers[47] = 
 {
 	AimController_Update_mF85209392F914800B41E0E458533FFA2CD268D04,
 	AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490,
 	Bullet_Update_m5AA63D0B1F389C2CFEE77466E1C39ADC813B4DBC,
 	Bullet_OnTriggerEnter2D_mC3642C0546BCF5AFC8036C6B77D66560C04685E8,
 	Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA,
+	BulletParPooling_Awake_m02378DF7A8C9285EDF2D9D79CCE12BE6EDE2498D,
+	BulletParPooling_Start_m01B972DB69DFBD891536CB866304619E38A9F1AE,
+	BulletParPooling_GetPoolObject_m53553C21945FB4E5929A1E6EDB0E5218D79E433A,
+	BulletParPooling__ctor_m1C534885F5668901C3415F505F0CD762CB036D5D,
+	BulletParticleDisable_Awake_m6600E740231A2CC7D9342AB90BFE5F6A081E1430,
+	BulletParticleDisable_Update_mC8879A55F2A5C8DE96D50E6CC5EA6DEB9BCFABE8,
+	BulletParticleDisable__ctor_m6609F696F695D4372F97300A279A1F16F5B047A9,
 	Enemy_TakeDamage_mFC3B669129AD870E4B66062CE726585528F8701D,
 	Enemy__ctor_mB6697627910F785A971C20C671DEFBA9D921D933,
 	GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F,
@@ -90,12 +104,19 @@ static Il2CppMethodPointer s_methodPointers[40] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[40] = 
+static const int32_t s_InvokerIndices[47] = 
 {
 	16236,
 	16236,
 	16236,
 	12274,
+	16236,
+	16236,
+	16236,
+	15992,
+	16236,
+	16236,
+	16236,
 	16236,
 	12202,
 	16236,
@@ -130,14 +151,14 @@ static const int32_t s_InvokerIndices[40] =
 	15992,
 	16236,
 	16236,
-	28492,
+	28493,
 	16236,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	40,
+	47,
 	s_methodPointers,
 	0,
 	NULL,

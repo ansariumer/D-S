@@ -22,9 +22,16 @@ public class Bullet : MonoBehaviour
           {
                Enemy enemy = other.GetComponent<Enemy>();
                enemy.TakeDamage(1);
-               Debug.Log("Bullet hit");
-               Instantiate(bulletParticle, transform.position, Quaternion.identity);
                bullet.SetActive(false);
+               //Instantiate(bulletParticle, transform.position, Quaternion.identity);
+               GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
+
+               if (hitEffect != null)
+               {
+                    hitEffect.transform.position = bullet.transform.position;
+                    hitEffect.SetActive(true);
+               }
+               
           }
    }
 }

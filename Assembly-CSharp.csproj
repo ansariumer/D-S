@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\dashButton.cs" />
+    <Compile Include="Assets\Script\BulletParticleDisable.cs" />
+    <Compile Include="Assets\Script\BulletParPooling.cs" />
     <Compile Include="Assets\Script\shootButton.cs" />
     <Compile Include="Assets\Script\bulletPooling.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />

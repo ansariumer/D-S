@@ -1141,6 +1141,7 @@ UnityEngine.ObjectDispatcher::EnableTransformTracking
 UnityEngine.ObjectDispatcher::EnableTypeTracking
 UnityEngine.ObjectGUIState::Internal_Create
 UnityEngine.ObjectGUIState::Internal_Destroy
+UnityEngine.ParticleSystem::IsAlive_Injected
 UnityEngine.ParticleSystem::get_useAutoRandomSeed_Injected
 UnityEngine.ParticleSystem::get_time_Injected
 UnityEngine.ParticleSystem::EmitOld_Internal_Injected
