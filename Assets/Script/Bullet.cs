@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
      public GameObject bullet;
+     public ParticleSystem bulletParticle;
      [SerializeField] private float speed = 10f;
 
      void Update()
@@ -17,12 +18,13 @@ public class Bullet : MonoBehaviour
                gameObject.SetActive(false);
           }
 
-     else if (other.CompareTag("Enemy"))
-     {
-          Enemy enemy = other.GetComponent<Enemy>();
-          enemy.TakeDamage(1);
-          Debug.Log("Bullet");
-          bullet.SetActive(false);
-     }
+          else if (other.CompareTag("Enemy"))
+          {
+               Enemy enemy = other.GetComponent<Enemy>();
+               enemy.TakeDamage(1);
+               Debug.Log("Bullet hit");
+               Instantiate(bulletParticle, transform.position, Quaternion.identity);
+               bullet.SetActive(false);
+          }
    }
 }

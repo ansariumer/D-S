@@ -170,4 +170,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   bullet: {fileID: 4149743715633075517}
+  bulletParticle: {fileID: 8704061439229535015, guid: 7f695af0b2593574eb215fea53e905c4, type: 3}
   speed: 10
