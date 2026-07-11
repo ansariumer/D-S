@@ -6,12 +6,19 @@ public class reloadButton : MonoBehaviour
 
     public void Reload()
     {
-        bulletCounter.currentCount = 20;
-        bulletCounter.totalCount -= bulletCounter.Fit; 
+        if (bulletCounter.totalCount != 0)
+        {
+            bulletCounter.currentCount = 20;
+            bulletCounter.totalCount -= bulletCounter.Fit; 
 
-        int totalUpdate = bulletCounter.totalCount - bulletCounter.Fit;
+            //int totalUpdate = bulletCounter.totalCount - bulletCounter.Fit;
 
-        bulletCounter.currentText.text = bulletCounter.currentCount.ToString();
-        bulletCounter.totalText.text = totalUpdate.ToString();
+            bulletCounter.currentText.text = bulletCounter.currentCount.ToString();
+            bulletCounter.totalText.text = bulletCounter.totalCount.ToString();
+        }
+        else
+        {
+            Debug.Log("Out Of Ammo");
+        }
     }
 }
