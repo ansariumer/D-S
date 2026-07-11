@@ -15,6 +15,7 @@ public class shootButton : MonoBehaviour
             nextShootTime = Time.time + firerate;
             //Instantiate(bullet, firePoint.position, firePoint.rotation);
             GameObject bullet = bulletPooling.instance.GetPoolObject();
+            FindAnyObjectByType<BulletCounter>().SubtractBullet();
 
             if (bullet != null)
             {
