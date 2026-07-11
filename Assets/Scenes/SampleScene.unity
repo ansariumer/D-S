@@ -417,6 +417,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletCounter
   currentText: {fileID: 1073232261}
+  totalText: {fileID: 1335063468}
+  currentCount: 20
+  totalCount: 200
+  Fit: 20
 --- !u!1 &332318579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,7 +1988,7 @@ RectTransform:
   m_GameObject: {fileID: 1335063466}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 219306959}
@@ -1992,7 +1996,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -824, y: 476.00003}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1335063468
 MonoBehaviour:
@@ -2014,7 +2018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 20
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2176,7 +2180,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1421079642}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1497917415}
+        m_TargetAssemblyTypeName: reloadButton, Assembly-CSharp
+        m_MethodName: Reload
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1421079642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2574,6 +2590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1497917414}
+  - component: {fileID: 1497917415}
   m_Layer: 0
   m_Name: reloadParent
   m_TagString: Untagged
@@ -2597,6 +2614,19 @@ Transform:
   - {fileID: 1421079640}
   m_Father: {fileID: 1487714962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1497917415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497917413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72d31fcc9d726547ab9f5ad1dc383ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::reloadButton
+  bulletCounter: {fileID: 219306960}
 --- !u!114 &1601199920 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 703516587150685852, guid: 9195443461816a14a91447fc38b93698, type: 3}
