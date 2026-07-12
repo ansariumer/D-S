@@ -355,6 +355,8 @@ MonoBehaviour:
   bullet: {fileID: 4149743715633075517, guid: 7855d7ea377ed3c469f2e040b2246b21, type: 3}
   firePoint: {fileID: 175969947}
   firerate: 0.2
+  bulletCounter: {fileID: 219306960}
+  reloadBtn: {fileID: 1497917415}
 --- !u!114 &179315384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,11 +418,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6efa9b119407014ab20d5d9c0fa84d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletCounter
-  currentText: {fileID: 1073232261}
   totalText: {fileID: 1335063468}
+  slashText: {fileID: 1074864241}
+  currentText: {fileID: 1073232261}
+  totalCount: 20
   currentCount: 20
-  totalCount: 40
   Fit: 20
+  reloadBtn: {fileID: 1497917415}
 --- !u!1 &332318579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,7 +2022,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 40
+  m_text: 20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2162,7 +2166,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 1, g: 0.9538584, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.2578616, g: 0.2578616, b: 0.2578616, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2627,6 +2631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::reloadButton
   bulletCounter: {fileID: 219306960}
+  isReloading: 0
+  reloadBtn: {fileID: 1421079641}
+  reloadDuration: 1.5
 --- !u!114 &1601199920 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 703516587150685852, guid: 9195443461816a14a91447fc38b93698, type: 3}
@@ -3548,6 +3555,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2124084308}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1098789991}
@@ -3555,6 +3563,5 @@ SceneRoots:
   - {fileID: 1470208651}
   - {fileID: 1101753479044469111}
   - {fileID: 1487714962}
-  - {fileID: 2124084308}
   - {fileID: 1261211813}
   - {fileID: 468345640}
