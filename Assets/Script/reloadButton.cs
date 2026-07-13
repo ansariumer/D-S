@@ -19,11 +19,12 @@ public class reloadButton : MonoBehaviour
 
         else if (bulletCounter.totalCount <= 0)
         {
-            Debug.Log("No ammo left");
+            Debug.Log("No ammo left to reload");
             return;
         }
 
         isReloading = true;
+        bulletCounter.reloadingText.SetActive(true);
         reloadBtn.interactable = false;
         StartCoroutine(Reloading());
     }
@@ -37,6 +38,7 @@ public class reloadButton : MonoBehaviour
 
         bulletCounter.RefreshUI();
 
+        bulletCounter.reloadingText.SetActive(false);
         isReloading = false;
         reloadBtn.interactable = true;
     }

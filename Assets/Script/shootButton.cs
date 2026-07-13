@@ -13,15 +13,13 @@ public class shootButton : MonoBehaviour
 
     public void Shoot()
     {
-        if (reloadBtn.isReloading == true)
+        if (reloadBtn.isReloading)
         {
             return;
         }
 
-        else if (bulletCounter.currentCount == 0 && bulletCounter.totalCount == 0)
+        if (bulletCounter.CanShoot() == false)
         {
-            //bulletCounter.currentText.color = Color.red;
-            Debug.Log("Out of Ammo");
             return;
         }
 
@@ -30,7 +28,7 @@ public class shootButton : MonoBehaviour
             nextShootTime = Time.time + firerate;
             //Instantiate(bullet, firePoint.position, firePoint.rotation);
             GameObject bullet = bulletPooling.instance.GetPoolObject();
-            FindAnyObjectByType<BulletCounter>().SubtractBullet();
+            bulletCounter.SubtractBullet();
 
             if (bullet != null)
             {

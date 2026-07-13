@@ -6,12 +6,21 @@ public class BulletCounter : MonoBehaviour
     public TMP_Text totalText;
     public TMP_Text slashText;
     public TMP_Text currentText; 
+
+    public GameObject noAmmoText;
+    public GameObject reloadingText;
     
     public int totalCount = 200;
     public int currentCount = 20;
     public int Fit = 20;
 
     public reloadButton reloadBtn;
+
+    void Awake()
+    {
+        noAmmoText.SetActive(false);
+        reloadingText.SetActive(false);
+    }
 
     public void SubtractBullet()
     {
@@ -39,10 +48,40 @@ public class BulletCounter : MonoBehaviour
             totalText.color = Color.white;
         }
 
-        if (currentCount == 0 && totalCount == 0)
+        if (IsOutOfAmmo() == true)
         {
             currentText.color = Color.red;
             slashText.color = Color.red;
+
+            noAmmoText.SetActive(true);
+        }
+        else
+        {
+            noAmmoText.SetActive(false);
+        }
+    }
+
+    public bool CanShoot()
+    {
+        if (IsOutOfAmmo() == true)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    public bool IsOutOfAmmo()
+    {
+        if (currentCount == 0 && totalCount == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

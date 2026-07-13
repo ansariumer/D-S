@@ -12,6 +12,9 @@ extern void AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490 (void)
 extern void Bullet_Update_m5AA63D0B1F389C2CFEE77466E1C39ADC813B4DBC (void);
 extern void Bullet_OnTriggerEnter2D_mC3642C0546BCF5AFC8036C6B77D66560C04685E8 (void);
 extern void Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA (void);
+extern void BulletCounter_SubtractBullet_mDF54C7A06DAA8DD13A064AA96B85E5A2D98A824B (void);
+extern void BulletCounter_RefreshUI_m26BBB1A020AC0A85FB960F7D2BAB4565290609EE (void);
+extern void BulletCounter__ctor_m974CE0AFFA632C60F7185D714248153AECA480A5 (void);
 extern void BulletParPooling_Awake_m02378DF7A8C9285EDF2D9D79CCE12BE6EDE2498D (void);
 extern void BulletParPooling_Start_m01B972DB69DFBD891536CB866304619E38A9F1AE (void);
 extern void BulletParPooling_GetPoolObject_m53553C21945FB4E5929A1E6EDB0E5218D79E433A (void);
@@ -50,17 +53,29 @@ extern void U3CStopDashU3Ed__5_MoveNext_m998EE26665A7A08B07EE82F8A159D720695DBEB
 extern void U3CStopDashU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m95702C79BE236016FAF2D13AF6F3C5897EE076FA (void);
 extern void U3CStopDashU3Ed__5_System_Collections_IEnumerator_Reset_m51A11343646252254BB985027E2174A9D894A4D0 (void);
 extern void U3CStopDashU3Ed__5_System_Collections_IEnumerator_get_Current_m6A8356C6DE36A8956E75CAB2A274D0BD6E6A7EC2 (void);
+extern void reloadButton_Reload_m2539FEA929DD5357AA801038D4B6AFB9DE414C4F (void);
+extern void reloadButton_Reloading_m8F984DD8C6904EE8A0F6C4A8B5F9BE5519FF0441 (void);
+extern void reloadButton__ctor_m3E6740C73118A946BAFB281A472DD9BB278B0D2A (void);
+extern void U3CReloadingU3Ed__5__ctor_mA6BEF2FDBC012F4AD017EF9592A074272C6D770D (void);
+extern void U3CReloadingU3Ed__5_System_IDisposable_Dispose_mA283B521B24BC86C042C3C265FD1008003FD0FDF (void);
+extern void U3CReloadingU3Ed__5_MoveNext_m651AB3A63F50F6D82D61C4657FB49748347387A0 (void);
+extern void U3CReloadingU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1AB266623040C3C93B5CB5E7BB9B687A94CCAB8D (void);
+extern void U3CReloadingU3Ed__5_System_Collections_IEnumerator_Reset_mEC123A0610E1CCD9CEDF141F0442D03A6C0EDBF2 (void);
+extern void U3CReloadingU3Ed__5_System_Collections_IEnumerator_get_Current_m4C90C2679AE008177104CC4C9B9387C69C487F37 (void);
 extern void shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9 (void);
 extern void shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[47] = 
+static Il2CppMethodPointer s_methodPointers[59] = 
 {
 	AimController_Update_mF85209392F914800B41E0E458533FFA2CD268D04,
 	AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490,
 	Bullet_Update_m5AA63D0B1F389C2CFEE77466E1C39ADC813B4DBC,
 	Bullet_OnTriggerEnter2D_mC3642C0546BCF5AFC8036C6B77D66560C04685E8,
 	Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA,
+	BulletCounter_SubtractBullet_mDF54C7A06DAA8DD13A064AA96B85E5A2D98A824B,
+	BulletCounter_RefreshUI_m26BBB1A020AC0A85FB960F7D2BAB4565290609EE,
+	BulletCounter__ctor_m974CE0AFFA632C60F7185D714248153AECA480A5,
 	BulletParPooling_Awake_m02378DF7A8C9285EDF2D9D79CCE12BE6EDE2498D,
 	BulletParPooling_Start_m01B972DB69DFBD891536CB866304619E38A9F1AE,
 	BulletParPooling_GetPoolObject_m53553C21945FB4E5929A1E6EDB0E5218D79E433A,
@@ -99,17 +114,29 @@ static Il2CppMethodPointer s_methodPointers[47] =
 	U3CStopDashU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m95702C79BE236016FAF2D13AF6F3C5897EE076FA,
 	U3CStopDashU3Ed__5_System_Collections_IEnumerator_Reset_m51A11343646252254BB985027E2174A9D894A4D0,
 	U3CStopDashU3Ed__5_System_Collections_IEnumerator_get_Current_m6A8356C6DE36A8956E75CAB2A274D0BD6E6A7EC2,
+	reloadButton_Reload_m2539FEA929DD5357AA801038D4B6AFB9DE414C4F,
+	reloadButton_Reloading_m8F984DD8C6904EE8A0F6C4A8B5F9BE5519FF0441,
+	reloadButton__ctor_m3E6740C73118A946BAFB281A472DD9BB278B0D2A,
+	U3CReloadingU3Ed__5__ctor_mA6BEF2FDBC012F4AD017EF9592A074272C6D770D,
+	U3CReloadingU3Ed__5_System_IDisposable_Dispose_mA283B521B24BC86C042C3C265FD1008003FD0FDF,
+	U3CReloadingU3Ed__5_MoveNext_m651AB3A63F50F6D82D61C4657FB49748347387A0,
+	U3CReloadingU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1AB266623040C3C93B5CB5E7BB9B687A94CCAB8D,
+	U3CReloadingU3Ed__5_System_Collections_IEnumerator_Reset_mEC123A0610E1CCD9CEDF141F0442D03A6C0EDBF2,
+	U3CReloadingU3Ed__5_System_Collections_IEnumerator_get_Current_m4C90C2679AE008177104CC4C9B9387C69C487F37,
 	shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9,
 	shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[47] = 
+static const int32_t s_InvokerIndices[59] = 
 {
 	16236,
 	16236,
 	16236,
 	12274,
+	16236,
+	16236,
+	16236,
 	16236,
 	16236,
 	16236,
@@ -150,6 +177,15 @@ static const int32_t s_InvokerIndices[47] =
 	16236,
 	15992,
 	16236,
+	15992,
+	16236,
+	12202,
+	16236,
+	15779,
+	15992,
+	16236,
+	15992,
+	16236,
 	16236,
 	28493,
 	16236,
@@ -158,7 +194,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	47,
+	59,
 	s_methodPointers,
 	0,
 	NULL,
