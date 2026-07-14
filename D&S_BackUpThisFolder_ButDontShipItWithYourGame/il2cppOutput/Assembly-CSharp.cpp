@@ -140,10 +140,9 @@ IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____48FE11D22A71A0FF853F05FD0A3112AA292DBE6B2753483A5E3B0CB5C2795A29_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral3260331AF5DA53ABC7CA7BAF659CF8D9FC93DEC7;
 IL2CPP_EXTERN_C String_t* _stringLiteral3402514A6504EAC3116A2358CD364CE6A2409455;
-IL2CPP_EXTERN_C String_t* _stringLiteral432F2890E7158DB569C3840F10FEB081B11045B6;
 IL2CPP_EXTERN_C String_t* _stringLiteral48918B920CB61A8FC36C54F7763CCE86199367D8;
+IL2CPP_EXTERN_C String_t* _stringLiteral72334907DCC50391F0BC4976AE99658ABB7AD79C;
 IL2CPP_EXTERN_C String_t* _stringLiteral7591C6B2C207685CBD36BB3D5ED56CC4ADA8FBD5;
-IL2CPP_EXTERN_C String_t* _stringLiteralF0867266491C73D655D43005BD454EE37AED22DF;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisTrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39_m2AB04BA59959CA952504A2089DC7E006ED382954_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisEnemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB_m0D3B0DBB86B84B475D762380E70C964C3B464E11_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1_mF2B700ECAEEEDBCC076CC66C9592C6DDFA0D36F9_RuntimeMethod_var;
@@ -152,7 +151,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mE8DBE527F24D9CFED839C34216C475B716169979_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Object_FindAnyObjectByType_TisBulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963_m45574EC530A876802254A9AFF9BB668B71D7DDA6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CReloadingU3Ed__5_System_Collections_IEnumerator_Reset_mEC123A0610E1CCD9CEDF141F0442D03A6C0EDBF2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStopDashU3Ed__5_System_Collections_IEnumerator_Reset_m51A11343646252254BB985027E2174A9D894A4D0_RuntimeMethod_var;
@@ -1241,6 +1239,8 @@ struct BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963  : public MonoBeh
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___totalText;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___slashText;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___currentText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___noAmmoText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___reloadingText;
 	int32_t ___totalCount;
 	int32_t ___currentCount;
 	int32_t ___Fit;
@@ -1781,7 +1781,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D6479
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_FindAnyObjectByType_TisRuntimeObject_mE7A79400E013891ADB85E4C6A5CF95B447D374BA_gshared (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 JoystickController_get_Direction_m37CA24A8C2BE1A6CB73ADE955577D6B4ED9D73E1_inline (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, const RuntimeMethod* method) ;
@@ -1812,6 +1811,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void reloadButton_Reload_m2539FEA929DD5357AA8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BulletCounter_IsOutOfAmmo_m6CACA29ADC16A6DB7151F304D86050D7617DA460 (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_original, const RuntimeMethod* method)
 {
@@ -1886,12 +1886,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* reloadButton_Reloading_m8F984DD8C6904EE8A0F6C4A8B5F9BE5519FF0441 (reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReloadingU3Ed__5__ctor_mA6BEF2FDBC012F4AD017EF9592A074272C6D770D (U3CReloadingU3Ed__5_t1E061C38C979832CC42F2DFFE2CE8B3811C8CD28* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BulletCounter_CanShoot_m16BED8E050AA0DE5C9C0880624B9BBFB1120B950 (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* bulletPooling_GetPoolObject_m96403CBB675CE898C92E10F71C8DD2E723AA3EE9 (bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C* __this, const RuntimeMethod* method) ;
-inline BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* Object_FindAnyObjectByType_TisBulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963_m45574EC530A876802254A9AFF9BB668B71D7DDA6 (const RuntimeMethod* method)
-{
-	return ((  BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* (*) (const RuntimeMethod*))Object_FindAnyObjectByType_TisRuntimeObject_mE7A79400E013891ADB85E4C6A5CF95B447D374BA_gshared)(method);
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter_SubtractBullet_mDF54C7A06DAA8DD13A064AA96B85E5A2D98A824B (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
@@ -1916,7 +1913,7 @@ inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76589
+// Method Definition Index: 76587
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AimController_Update_mF85209392F914800B41E0E458533FFA2CD268D04 (AimController_t682BBBF3FF6CAD24D95FF765F56C8DA992511E9A* __this, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -1961,7 +1958,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 76590
+// Method Definition Index: 76588
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490 (AimController_t682BBBF3FF6CAD24D95FF765F56C8DA992511E9A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1977,7 +1974,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AimController__ctor_m09202B7BADA38CA7558
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76591
+// Method Definition Index: 76589
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bullet_Update_m5AA63D0B1F389C2CFEE77466E1C39ADC813B4DBC (Bullet_t5A7C684C3CECF8FB977D516EC7DBDF9102D7E344* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2008,7 +2005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bullet_Update_m5AA63D0B1F389C2CFEE77466E
 		return;
 	}
 }
-// Method Definition Index: 76592
+// Method Definition Index: 76590
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bullet_OnTriggerEnter2D_mC3642C0546BCF5AFC8036C6B77D66560C04685E8 (Bullet_t5A7C684C3CECF8FB977D516EC7DBDF9102D7E344* __this, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2110,7 +2107,7 @@ IL_0075:
 		return;
 	}
 }
-// Method Definition Index: 76593
+// Method Definition Index: 76591
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA (Bullet_t5A7C684C3CECF8FB977D516EC7DBDF9102D7E344* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2128,16 +2125,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bullet__ctor_m873C02F2114EA93A35E4392013
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76594
+// Method Definition Index: 76592
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter_Awake_mB0D9D1E6D853B241AF49DD9296E3DE782965273F (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:21>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___noAmmoText;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:22>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___reloadingText;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:23>
+		return;
+	}
+}
+// Method Definition Index: 76593
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter_SubtractBullet_mDF54C7A06DAA8DD13A064AA96B85E5A2D98A824B (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:18>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:27>
 		int32_t L_0 = __this->___currentCount;
 		__this->___currentCount = ((int32_t)il2cpp_codegen_subtract(L_0, 1));
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:19>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:28>
 		BulletCounter_RefreshUI_m26BBB1A020AC0A85FB960F7D2BAB4565290609EE(__this, NULL);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:22>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:31>
 		int32_t L_1 = __this->___currentCount;
 		if (L_1)
 		{
@@ -2152,7 +2165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter_SubtractBullet_mDF54C7A06D
 		}
 	}
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:24>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:33>
 		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_3 = __this->___reloadBtn;
 		NullCheck(L_3);
 		reloadButton_Reload_m2539FEA929DD5357AA801038D4B6AFB9DE414C4F(L_3, NULL);
@@ -2160,29 +2173,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter_SubtractBullet_mDF54C7A06D
 
 IL_002f:
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:26>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:35>
 		return;
 	}
 }
-// Method Definition Index: 76595
+// Method Definition Index: 76594
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter_RefreshUI_m26BBB1A020AC0A85FB960F7D2BAB4565290609EE (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:30>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:39>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___currentText;
 		int32_t* L_1 = (int32_t*)(&__this->___currentCount);
 		String_t* L_2;
 		L_2 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_1, NULL);
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, L_2);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:31>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:40>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->___totalText;
 		int32_t* L_4 = (int32_t*)(&__this->___totalCount);
 		String_t* L_5;
 		L_5 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_4, NULL);
 		NullCheck(L_3);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_3, L_5);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:33>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:42>
 		int32_t L_6 = __this->___totalCount;
 		if (L_6)
 		{
@@ -2190,7 +2203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter_RefreshUI_m26BBB1A020AC0A8
 		}
 	}
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:35>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:44>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = __this->___totalText;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8;
 		L_8 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
@@ -2201,7 +2214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter_RefreshUI_m26BBB1A020AC0A8
 
 IL_0046:
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:39>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:48>
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = __this->___totalText;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10;
 		L_10 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
@@ -2211,50 +2224,105 @@ IL_0046:
 
 IL_0056:
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:42>
-		int32_t L_11 = __this->___currentCount;
-		if (L_11)
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:51>
+		bool L_11;
+		L_11 = BulletCounter_IsOutOfAmmo_m6CACA29ADC16A6DB7151F304D86050D7617DA460(__this, NULL);
+		if (!L_11)
 		{
-			goto IL_0086;
+			goto IL_008b;
 		}
 	}
 	{
-		int32_t L_12 = __this->___totalCount;
-		if (L_12)
-		{
-			goto IL_0086;
-		}
-	}
-	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:44>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_13 = __this->___currentText;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_14;
-		L_14 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
-		NullCheck(L_13);
-		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_13, L_14);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:45>
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_15 = __this->___slashText;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_16;
-		L_16 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
-		NullCheck(L_15);
-		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_15, L_16);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:53>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_12 = __this->___currentText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13;
+		L_13 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
+		NullCheck(L_12);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_12, L_13);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:54>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_14 = __this->___slashText;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_15;
+		L_15 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
+		NullCheck(L_14);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23, L_14, L_15);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:56>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___noAmmoText;
+		NullCheck(L_16);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)1, NULL);
+		return;
 	}
 
-IL_0086:
+IL_008b:
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:47>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:60>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___noAmmoText;
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)0, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:62>
 		return;
 	}
 }
+// Method Definition Index: 76595
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BulletCounter_CanShoot_m16BED8E050AA0DE5C9C0880624B9BBFB1120B950 (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:66>
+		bool L_0;
+		L_0 = BulletCounter_IsOutOfAmmo_m6CACA29ADC16A6DB7151F304D86050D7617DA460(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:68>
+		return (bool)0;
+	}
+
+IL_000a:
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:72>
+		return (bool)1;
+	}
+}
 // Method Definition Index: 76596
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BulletCounter_IsOutOfAmmo_m6CACA29ADC16A6DB7151F304D86050D7617DA460 (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:78>
+		int32_t L_0 = __this->___currentCount;
+		if (L_0)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		int32_t L_1 = __this->___totalCount;
+		if (L_1)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:80>
+		return (bool)1;
+	}
+
+IL_0012:
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:84>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 76597
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter__ctor_m974CE0AFFA632C60F7185D714248153AECA480A5 (BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:10>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:13>
 		__this->___totalCount = ((int32_t)200);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:11>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:14>
 		__this->___currentCount = ((int32_t)20);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:12>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/BulletCounter.cs:15>
 		__this->___Fit = ((int32_t)20);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -2268,7 +2336,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletCounter__ctor_m974CE0AFFA632C60F71
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76597
+// Method Definition Index: 76598
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParPooling_Awake_m02378DF7A8C9285EDF2D9D79CCE12BE6EDE2498D (BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2301,7 +2369,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 76598
+// Method Definition Index: 76599
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParPooling_Start_m01B972DB69DFBD891536CB866304619E38A9F1AE (BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2357,7 +2425,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 76599
+// Method Definition Index: 76600
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* BulletParPooling_GetPoolObject_m53553C21945FB4E5929A1E6EDB0E5218D79E433A (BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2425,7 +2493,7 @@ IL_0028:
 		return (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 	}
 }
-// Method Definition Index: 76600
+// Method Definition Index: 76601
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParPooling__ctor_m1C534885F5668901C3415F505F0CD762CB036D5D (BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2455,7 +2523,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParPooling__ctor_m1C534885F5668901
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76601
+// Method Definition Index: 76602
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParticleDisable_Awake_m6600E740231A2CC7D9342AB90BFE5F6A081E1430 (BulletParticleDisable_t6F206A46B93A00C360A6F0407F5086AC89F3D617* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2474,7 +2542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParticleDisable_Awake_m6600E740231
 		return;
 	}
 }
-// Method Definition Index: 76602
+// Method Definition Index: 76603
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParticleDisable_Update_mC8879A55F2A5C8DE96D50E6CC5EA6DEB9BCFABE8 (BulletParticleDisable_t6F206A46B93A00C360A6F0407F5086AC89F3D617* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2502,7 +2570,7 @@ IL_0019:
 		return;
 	}
 }
-// Method Definition Index: 76603
+// Method Definition Index: 76604
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParticleDisable__ctor_m6609F696F695D4372F97300A279A1F16F5B047A9 (BulletParticleDisable_t6F206A46B93A00C360A6F0407F5086AC89F3D617* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2518,7 +2586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BulletParticleDisable__ctor_m6609F696F69
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76604
+// Method Definition Index: 76605
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enemy_TakeDamage_mFC3B669129AD870E4B66062CE726585528F8701D (Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* __this, int32_t ___0_damage, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2553,7 +2621,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 76605
+// Method Definition Index: 76606
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enemy__ctor_mB6697627910F785A971C20C671DEFBA9D921D933 (Enemy_t10DB314C96B1CE78B8D967CD3B39F05126409BBB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2571,7 +2639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enemy__ctor_mB6697627910F785A971C20C671D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76606
+// Method Definition Index: 76607
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2598,7 +2666,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C
 		return;
 	}
 }
-// Method Definition Index: 76607
+// Method Definition Index: 76608
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2614,7 +2682,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager__ctor_mF453CED520617BFB65C52
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76608
+// Method Definition Index: 76609
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 JoystickController_get_Direction_m37CA24A8C2BE1A6CB73ADE955577D6B4ED9D73E1 (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2623,7 +2691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 		return L_0;
 	}
 }
-// Method Definition Index: 76609
+// Method Definition Index: 76610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_set_Direction_m661D16B2702AFD2E70AE580B16FE523DEB196D33 (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -2633,7 +2701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_set_Direction_m661D16
 		return;
 	}
 }
-// Method Definition Index: 76610
+// Method Definition Index: 76611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_Start_m49768A0651B980480BEF0686B3CE7A524AA9FC37 (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2648,7 +2716,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_Start_m49768A0651B980
 		return;
 	}
 }
-// Method Definition Index: 76611
+// Method Definition Index: 76612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_OnPointerDown_m282DC1E76B760E59F515718B420E49EF23A5573C (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -2659,7 +2727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_OnPointerDown_m282DC1
 		return;
 	}
 }
-// Method Definition Index: 76612
+// Method Definition Index: 76613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_OnDrag_m58D994671580818B22603FD436BF3446CC332F4D (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2719,7 +2787,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_OnDrag_m58D9946715808
 		return;
 	}
 }
-// Method Definition Index: 76613
+// Method Definition Index: 76614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_OnPointerUp_mF72BB2EF67C2A6A0B6CE9D6E0C6E34B9B07E9854 (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -2737,7 +2805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController_OnPointerUp_mF72BB2EF
 		return;
 	}
 }
-// Method Definition Index: 76614
+// Method Definition Index: 76615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController__ctor_mD47A803DD7AD117F73E1275CD8BF1402B659DAF0 (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2753,7 +2821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JoystickController__ctor_mD47A803DD7AD11
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76615
+// Method Definition Index: 76616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_Awake_m512A28E1559EB8AEEB2E1DB873F9F99FCC96BA67 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2789,7 +2857,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_Awake_m512A28E1559EB8AEEB2E1DB873
 		return;
 	}
 }
-// Method Definition Index: 76616
+// Method Definition Index: 76617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_Update_m95E134A5EF1B5164EA281F61D7FA436F59BE3C9F (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2856,7 +2924,7 @@ IL_007f:
 		return;
 	}
 }
-// Method Definition Index: 76617
+// Method Definition Index: 76618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_FixedUpdate_mEDDB0539FCD5145298CB87D4592DFFF98503AF9B (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2907,7 +2975,7 @@ IL_0047:
 		return;
 	}
 }
-// Method Definition Index: 76618
+// Method Definition Index: 76619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_Dash_m1F848E7396DBC55D54C982DF41C3913086DA6261 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2941,7 +3009,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_Dash_m1F848E7396DBC55D54C982DF41C
 		return;
 	}
 }
-// Method Definition Index: 76619
+// Method Definition Index: 76620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_StopDash_m7611748A3743D53D5E57C223F6ABA927FD0EA10D (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2960,7 +3028,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_StopDash_m7611748A3743D53D5E57C22
 		return;
 	}
 }
-// Method Definition Index: 76620
+// Method Definition Index: 76621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_OnTriggerEnter2D_m6E01BC069CDBBED27A57ABF1E3A77B49504CD433 (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___0_other, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3017,7 +3085,7 @@ IL_002c:
 		return;
 	}
 }
-// Method Definition Index: 76621
+// Method Definition Index: 76622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player__ctor_m0A83E0706592FC871B0CF188B37AFC6649F3D85D (Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3050,7 +3118,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player__ctor_m0A83E0706592FC871B0CF188B3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76622
+// Method Definition Index: 76623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void bulletPooling_Awake_m88D0A38D36587B0F8A61F360604B237B7DB9DC99 (bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3083,7 +3151,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 76623
+// Method Definition Index: 76624
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void bulletPooling_Start_m060C15696E9EB1E67D3FB61DD48E00F49DD9507E (bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3139,7 +3207,7 @@ IL_0027:
 		return;
 	}
 }
-// Method Definition Index: 76624
+// Method Definition Index: 76625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* bulletPooling_GetPoolObject_m96403CBB675CE898C92E10F71C8DD2E723AA3EE9 (bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3207,7 +3275,7 @@ IL_0028:
 		return (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
 	}
 }
-// Method Definition Index: 76625
+// Method Definition Index: 76626
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void bulletPooling__ctor_m2499B21C52ABC7A7E9B8A862ED8D1F369262459D (bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3237,7 +3305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void bulletPooling__ctor_m2499B21C52ABC7A7E9B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76626
+// Method Definition Index: 76627
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void dashButton_Dash_m156E72993ADFB16430A42C9610B8E61834A18DD6 (dashButton_t4212AEBDB5C636CE01D0296C28E42C5DA9A41325* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3272,7 +3340,7 @@ IL_0031:
 		return;
 	}
 }
-// Method Definition Index: 76627
+// Method Definition Index: 76628
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* dashButton_StopDash_mD36BF4971088E158737BA8B2B98697C3E1CDA602 (dashButton_t4212AEBDB5C636CE01D0296C28E42C5DA9A41325* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3291,7 +3359,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* dashButton_StopDash_mD36BF4971
 		return L_1;
 	}
 }
-// Method Definition Index: 76628
+// Method Definition Index: 76629
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void dashButton__ctor_mCD4986B8A466182A5476F19D62A00511083BE500 (dashButton_t4212AEBDB5C636CE01D0296C28E42C5DA9A41325* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3309,7 +3377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void dashButton__ctor_mCD4986B8A466182A5476F1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76629
+// Method Definition Index: 76630
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopDashU3Ed__5__ctor_mC19F054B63DAD73BC4F620EB9B45C4EC9ACA8ED3 (U3CStopDashU3Ed__5_t3BB9EAD0E29E1F1A2E49AF38214C55B9CB33A0C6* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -3319,14 +3387,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopDashU3Ed__5__ctor_mC19F054B63DAD7
 		return;
 	}
 }
-// Method Definition Index: 76630
+// Method Definition Index: 76631
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopDashU3Ed__5_System_IDisposable_Dispose_m0FE266DFD617B6CBF69151F732E5A374B1526580 (U3CStopDashU3Ed__5_t3BB9EAD0E29E1F1A2E49AF38214C55B9CB33A0C6* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 76631
+// Method Definition Index: 76632
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStopDashU3Ed__5_MoveNext_m998EE26665A7A08B07EE82F8A159D720695DBEBA (U3CStopDashU3Ed__5_t3BB9EAD0E29E1F1A2E49AF38214C55B9CB33A0C6* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3392,7 +3460,7 @@ IL_0038:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 76632
+// Method Definition Index: 76633
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStopDashU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m95702C79BE236016FAF2D13AF6F3C5897EE076FA (U3CStopDashU3Ed__5_t3BB9EAD0E29E1F1A2E49AF38214C55B9CB33A0C6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3400,7 +3468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStopDashU3Ed__5_System_Coll
 		return L_0;
 	}
 }
-// Method Definition Index: 76633
+// Method Definition Index: 76634
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopDashU3Ed__5_System_Collections_IEnumerator_Reset_m51A11343646252254BB985027E2174A9D894A4D0 (U3CStopDashU3Ed__5_t3BB9EAD0E29E1F1A2E49AF38214C55B9CB33A0C6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3409,7 +3477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStopDashU3Ed__5_System_Collections_IE
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CStopDashU3Ed__5_System_Collections_IEnumerator_Reset_m51A11343646252254BB985027E2174A9D894A4D0_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 76634
+// Method Definition Index: 76635
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStopDashU3Ed__5_System_Collections_IEnumerator_get_Current_m6A8356C6DE36A8956E75CAB2A274D0BD6E6A7EC2 (U3CStopDashU3Ed__5_t3BB9EAD0E29E1F1A2E49AF38214C55B9CB33A0C6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3425,14 +3493,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStopDashU3Ed__5_System_Coll
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76635
+// Method Definition Index: 76636
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void reloadButton_Reload_m2539FEA929DD5357AA801038D4B6AFB9DE414C4F (reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral432F2890E7158DB569C3840F10FEB081B11045B6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral72334907DCC50391F0BC4976AE99658ABB7AD79C);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -3467,7 +3535,7 @@ IL_0019:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:22>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral432F2890E7158DB569C3840F10FEB081B11045B6, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral72334907DCC50391F0BC4976AE99658ABB7AD79C, NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:23>
 		return;
 	}
@@ -3477,19 +3545,25 @@ IL_0032:
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:26>
 		__this->___isReloading = (bool)1;
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:27>
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_6 = __this->___reloadBtn;
+		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_6 = __this->___bulletCounter;
 		NullCheck(L_6);
-		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_6, (bool)0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = L_6->___reloadingText;
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:28>
-		RuntimeObject* L_7;
-		L_7 = reloadButton_Reloading_m8F984DD8C6904EE8A0F6C4A8B5F9BE5519FF0441(__this, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_8;
-		L_8 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_7, NULL);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_8 = __this->___reloadBtn;
+		NullCheck(L_8);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_8, (bool)0, NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:29>
+		RuntimeObject* L_9;
+		L_9 = reloadButton_Reloading_m8F984DD8C6904EE8A0F6C4A8B5F9BE5519FF0441(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_10;
+		L_10 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_9, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:30>
 		return;
 	}
 }
-// Method Definition Index: 76636
+// Method Definition Index: 76637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* reloadButton_Reloading_m8F984DD8C6904EE8A0F6C4A8B5F9BE5519FF0441 (reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3508,7 +3582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* reloadButton_Reloading_m8F984D
 		return L_1;
 	}
 }
-// Method Definition Index: 76637
+// Method Definition Index: 76638
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void reloadButton__ctor_m3E6740C73118A946BAFB281A472DD9BB278B0D2A (reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3526,7 +3600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void reloadButton__ctor_m3E6740C73118A946BAFB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76638
+// Method Definition Index: 76639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReloadingU3Ed__5__ctor_mA6BEF2FDBC012F4AD017EF9592A074272C6D770D (U3CReloadingU3Ed__5_t1E061C38C979832CC42F2DFFE2CE8B3811C8CD28* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -3536,14 +3610,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReloadingU3Ed__5__ctor_mA6BEF2FDBC012
 		return;
 	}
 }
-// Method Definition Index: 76639
+// Method Definition Index: 76640
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReloadingU3Ed__5_System_IDisposable_Dispose_mA283B521B24BC86C042C3C265FD1008003FD0FDF (U3CReloadingU3Ed__5_t1E061C38C979832CC42F2DFFE2CE8B3811C8CD28* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 76640
+// Method Definition Index: 76641
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CReloadingU3Ed__5_MoveNext_m651AB3A63F50F6D82D61C4657FB49748347387A0 (U3CReloadingU3Ed__5_t1E061C38C979832CC42F2DFFE2CE8B3811C8CD28* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3579,7 +3653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CReloadingU3Ed__5_MoveNext_m651AB3A63F
 IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:33>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:34>
 		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_4 = V_1;
 		NullCheck(L_4);
 		float L_5 = L_4->___reloadDuration;
@@ -3594,7 +3668,7 @@ IL_0017:
 IL_0038:
 	{
 		__this->___U3CU3E1__state = (-1);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:35>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:36>
 		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_7 = V_1;
 		NullCheck(L_7);
 		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_8 = L_7->___bulletCounter;
@@ -3605,7 +3679,7 @@ IL_0038:
 		int32_t L_11 = L_10->___Fit;
 		NullCheck(L_8);
 		L_8->___currentCount = L_11;
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:36>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:37>
 		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_12 = V_1;
 		NullCheck(L_12);
 		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_13 = L_12->___bulletCounter;
@@ -3619,27 +3693,35 @@ IL_0038:
 		int32_t L_18 = L_17->___Fit;
 		NullCheck(L_14);
 		L_14->___totalCount = ((int32_t)il2cpp_codegen_subtract(L_15, L_18));
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:38>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:39>
 		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_19 = V_1;
 		NullCheck(L_19);
 		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_20 = L_19->___bulletCounter;
 		NullCheck(L_20);
 		BulletCounter_RefreshUI_m26BBB1A020AC0A85FB960F7D2BAB4565290609EE(L_20, NULL);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:40>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:41>
 		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_21 = V_1;
 		NullCheck(L_21);
-		L_21->___isReloading = (bool)0;
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:41>
-		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_22 = V_1;
+		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_22 = L_21->___bulletCounter;
 		NullCheck(L_22);
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_23 = L_22->___reloadBtn;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = L_22->___reloadingText;
 		NullCheck(L_23);
-		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_23, (bool)1, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_23, (bool)0, NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:42>
+		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_24 = V_1;
+		NullCheck(L_24);
+		L_24->___isReloading = (bool)0;
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:43>
+		reloadButton_t9CC581B2BF4FB65044BB7979CDBB14D1615DC346* L_25 = V_1;
+		NullCheck(L_25);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_26 = L_25->___reloadBtn;
+		NullCheck(L_26);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_26, (bool)1, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/reloadButton.cs:44>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 76641
+// Method Definition Index: 76642
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CReloadingU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1AB266623040C3C93B5CB5E7BB9B687A94CCAB8D (U3CReloadingU3Ed__5_t1E061C38C979832CC42F2DFFE2CE8B3811C8CD28* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3647,7 +3729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CReloadingU3Ed__5_System_Col
 		return L_0;
 	}
 }
-// Method Definition Index: 76642
+// Method Definition Index: 76643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReloadingU3Ed__5_System_Collections_IEnumerator_Reset_mEC123A0610E1CCD9CEDF141F0442D03A6C0EDBF2 (U3CReloadingU3Ed__5_t1E061C38C979832CC42F2DFFE2CE8B3811C8CD28* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3656,7 +3738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CReloadingU3Ed__5_System_Collections_I
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CReloadingU3Ed__5_System_Collections_IEnumerator_Reset_mEC123A0610E1CCD9CEDF141F0442D03A6C0EDBF2_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 76643
+// Method Definition Index: 76644
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CReloadingU3Ed__5_System_Collections_IEnumerator_get_Current_m4C90C2679AE008177104CC4C9B9387C69C487F37 (U3CReloadingU3Ed__5_t1E061C38C979832CC42F2DFFE2CE8B3811C8CD28* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3672,16 +3754,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CReloadingU3Ed__5_System_Col
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76644
+// Method Definition Index: 76645
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9 (shootButton_t400C59041D9AA8540E518B61A3D97DC08D1EFB8E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindAnyObjectByType_TisBulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963_m45574EC530A876802254A9AFF9BB668B71D7DDA6_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF0867266491C73D655D43005BD454EE37AED22DF);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -3706,103 +3785,91 @@ IL_000e:
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:21>
 		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_2 = __this->___bulletCounter;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->___currentCount;
+		bool L_3;
+		L_3 = BulletCounter_CanShoot_m16BED8E050AA0DE5C9C0880624B9BBFB1120B950(L_2, NULL);
 		if (L_3)
 		{
-			goto IL_0033;
+			goto IL_001c;
 		}
 	}
 	{
-		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_4 = __this->___bulletCounter;
-		NullCheck(L_4);
-		int32_t L_5 = L_4->___totalCount;
-		if (L_5)
-		{
-			goto IL_0033;
-		}
-	}
-	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:24>
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralF0867266491C73D655D43005BD454EE37AED22DF, NULL);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:25>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:23>
 		return;
 	}
 
-IL_0033:
+IL_001c:
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:26>
+		float L_4;
+		L_4 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_5 = __this->___nextShootTime;
+		if ((!(((float)L_4) >= ((float)L_5))))
+		{
+			goto IL_008d;
+		}
+	}
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:28>
 		float L_6;
 		L_6 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		float L_7 = __this->___nextShootTime;
-		if ((!(((float)L_6) >= ((float)L_7))))
+		float L_7 = __this->___firerate;
+		__this->___nextShootTime = ((float)il2cpp_codegen_add(L_6, L_7));
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:30>
+		bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C* L_8 = ((bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C_StaticFields*)il2cpp_codegen_static_fields_for(bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C_il2cpp_TypeInfo_var))->___instance;
+		NullCheck(L_8);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
+		L_9 = bulletPooling_GetPoolObject_m96403CBB675CE898C92E10F71C8DD2E723AA3EE9(L_8, NULL);
+		V_0 = L_9;
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:31>
+		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_10 = __this->___bulletCounter;
+		NullCheck(L_10);
+		BulletCounter_SubtractBullet_mDF54C7A06DAA8DD13A064AA96B85E5A2D98A824B(L_10, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:33>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_12;
+		L_12 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_11, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_12)
 		{
-			goto IL_00a3;
+			goto IL_008d;
 		}
 	}
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:30>
-		float L_8;
-		L_8 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
-		float L_9 = __this->___firerate;
-		__this->___nextShootTime = ((float)il2cpp_codegen_add(L_8, L_9));
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:32>
-		bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C* L_10 = ((bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C_StaticFields*)il2cpp_codegen_static_fields_for(bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C_il2cpp_TypeInfo_var))->___instance;
-		NullCheck(L_10);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11;
-		L_11 = bulletPooling_GetPoolObject_m96403CBB675CE898C92E10F71C8DD2E723AA3EE9(L_10, NULL);
-		V_0 = L_11;
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:33>
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963* L_12;
-		L_12 = Object_FindAnyObjectByType_TisBulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963_m45574EC530A876802254A9AFF9BB668B71D7DDA6(Object_FindAnyObjectByType_TisBulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963_m45574EC530A876802254A9AFF9BB668B71D7DDA6_RuntimeMethod_var);
-		NullCheck(L_12);
-		BulletCounter_SubtractBullet_mDF54C7A06DAA8DD13A064AA96B85E5A2D98A824B(L_12, NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:35>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_0;
-		bool L_14;
-		L_14 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_13, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_14)
-		{
-			goto IL_00a3;
-		}
-	}
-	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:37>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = V_0;
+		NullCheck(L_13);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
+		L_14 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_13, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = __this->___firePoint;
 		NullCheck(L_15);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
-		L_16 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_15, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___firePoint;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_15, NULL);
+		NullCheck(L_14);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_14, L_16, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:36>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_0;
 		NullCheck(L_17);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
-		L_18 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_17, NULL);
-		NullCheck(L_16);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_16, L_18, NULL);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:38>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_17, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19 = __this->___firePoint;
 		NullCheck(L_19);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
-		L_20 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_19, NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21 = __this->___firePoint;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_20;
+		L_20 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_19, NULL);
+		NullCheck(L_18);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_18, L_20, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:37>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = V_0;
 		NullCheck(L_21);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_22;
-		L_22 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_21, NULL);
-		NullCheck(L_20);
-		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_20, L_22, NULL);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:39>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = V_0;
-		NullCheck(L_23);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_23, (bool)1, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_21, (bool)1, NULL);
 	}
 
-IL_00a3:
+IL_008d:
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:42>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/shootButton.cs:40>
 		return;
 	}
 }
-// Method Definition Index: 76645
+// Method Definition Index: 76646
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C (shootButton_t400C59041D9AA8540E518B61A3D97DC08D1EFB8E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3820,7 +3887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void shootButton__ctor_mBE7129B0A2C7BC3036F99
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 76646
+// Method Definition Index: 76647
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3854,7 +3921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		return L_6;
 	}
 }
-// Method Definition Index: 76647
+// Method Definition Index: 76648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3959,7 +4026,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 76608
+// Method Definition Index: 76609
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 JoystickController_get_Direction_m37CA24A8C2BE1A6CB73ADE955577D6B4ED9D73E1_inline (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4066,7 +4133,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED02
 		return L_0;
 	}
 }
-// Method Definition Index: 65024
+// Method Definition Index: 65022
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 PointerEventData_get_position_m5BE71C28EB72EFB8435749E4E6E839213AEF458C_inline (PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -4185,7 +4252,7 @@ IL_0050:
 		return L_19;
 	}
 }
-// Method Definition Index: 76609
+// Method Definition Index: 76610
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void JoystickController_set_Direction_m661D16B2702AFD2E70AE580B16FE523DEB196D33_inline (JoystickController_t69853748DAD9B44EEF94B5F037768B5B1C82F193* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) 
 {
 	{

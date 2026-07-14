@@ -12,8 +12,11 @@ extern void AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490 (void)
 extern void Bullet_Update_m5AA63D0B1F389C2CFEE77466E1C39ADC813B4DBC (void);
 extern void Bullet_OnTriggerEnter2D_mC3642C0546BCF5AFC8036C6B77D66560C04685E8 (void);
 extern void Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA (void);
+extern void BulletCounter_Awake_mB0D9D1E6D853B241AF49DD9296E3DE782965273F (void);
 extern void BulletCounter_SubtractBullet_mDF54C7A06DAA8DD13A064AA96B85E5A2D98A824B (void);
 extern void BulletCounter_RefreshUI_m26BBB1A020AC0A85FB960F7D2BAB4565290609EE (void);
+extern void BulletCounter_CanShoot_m16BED8E050AA0DE5C9C0880624B9BBFB1120B950 (void);
+extern void BulletCounter_IsOutOfAmmo_m6CACA29ADC16A6DB7151F304D86050D7617DA460 (void);
 extern void BulletCounter__ctor_m974CE0AFFA632C60F7185D714248153AECA480A5 (void);
 extern void BulletParPooling_Awake_m02378DF7A8C9285EDF2D9D79CCE12BE6EDE2498D (void);
 extern void BulletParPooling_Start_m01B972DB69DFBD891536CB866304619E38A9F1AE (void);
@@ -66,15 +69,18 @@ extern void shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9 (void);
 extern void shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[59] = 
+static Il2CppMethodPointer s_methodPointers[62] = 
 {
 	AimController_Update_mF85209392F914800B41E0E458533FFA2CD268D04,
 	AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490,
 	Bullet_Update_m5AA63D0B1F389C2CFEE77466E1C39ADC813B4DBC,
 	Bullet_OnTriggerEnter2D_mC3642C0546BCF5AFC8036C6B77D66560C04685E8,
 	Bullet__ctor_m873C02F2114EA93A35E4392013AC831246756CBA,
+	BulletCounter_Awake_mB0D9D1E6D853B241AF49DD9296E3DE782965273F,
 	BulletCounter_SubtractBullet_mDF54C7A06DAA8DD13A064AA96B85E5A2D98A824B,
 	BulletCounter_RefreshUI_m26BBB1A020AC0A85FB960F7D2BAB4565290609EE,
+	BulletCounter_CanShoot_m16BED8E050AA0DE5C9C0880624B9BBFB1120B950,
+	BulletCounter_IsOutOfAmmo_m6CACA29ADC16A6DB7151F304D86050D7617DA460,
 	BulletCounter__ctor_m974CE0AFFA632C60F7185D714248153AECA480A5,
 	BulletParPooling_Awake_m02378DF7A8C9285EDF2D9D79CCE12BE6EDE2498D,
 	BulletParPooling_Start_m01B972DB69DFBD891536CB866304619E38A9F1AE,
@@ -128,7 +134,7 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[59] = 
+static const int32_t s_InvokerIndices[62] = 
 {
 	16236,
 	16236,
@@ -137,6 +143,9 @@ static const int32_t s_InvokerIndices[59] =
 	16236,
 	16236,
 	16236,
+	16236,
+	15779,
+	15779,
 	16236,
 	16236,
 	16236,
@@ -194,7 +203,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	59,
+	62,
 	s_methodPointers,
 	0,
 	NULL,

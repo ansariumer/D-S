@@ -5331,6 +5331,8 @@ struct BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963  : public MonoBeh
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___totalText;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___slashText;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___currentText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___noAmmoText;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___reloadingText;
 	int32_t ___totalCount;
 	int32_t ___currentCount;
 	int32_t ___Fit;
@@ -6999,9 +7001,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9588[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9589[3] = 
 {
 	static_cast<int32_t>(offsetof(Bullet_t5A7C684C3CECF8FB977D516EC7DBDF9102D7E344, ___bullet)),static_cast<int32_t>(offsetof(Bullet_t5A7C684C3CECF8FB977D516EC7DBDF9102D7E344, ___bulletParticle)),static_cast<int32_t>(offsetof(Bullet_t5A7C684C3CECF8FB977D516EC7DBDF9102D7E344, ___speed)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9590[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9590[9] = 
 {
-	static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___totalText)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___slashText)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___currentText)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___totalCount)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___currentCount)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___Fit)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___reloadBtn)),};
+	static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___totalText)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___slashText)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___currentText)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___noAmmoText)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___reloadingText)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___totalCount)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___currentCount)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___Fit)),static_cast<int32_t>(offsetof(BulletCounter_tDC73A3D5DCD14C0DED2109FB7E9EBA8348AA8963, ___reloadBtn)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9591[4] = 
 {
 	static_cast<int32_t>(offsetof(BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_StaticFields, ___instance)),static_cast<int32_t>(offsetof(BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D, ___pooledPar)),static_cast<int32_t>(offsetof(BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D, ___amountToPool)),static_cast<int32_t>(offsetof(BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D, ___bulletPar)),};
