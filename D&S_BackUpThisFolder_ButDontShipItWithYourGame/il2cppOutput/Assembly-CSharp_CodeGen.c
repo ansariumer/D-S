@@ -25,8 +25,15 @@ extern void BulletParPooling__ctor_m1C534885F5668901C3415F505F0CD762CB036D5D (vo
 extern void BulletParticleDisable_Awake_m6600E740231A2CC7D9342AB90BFE5F6A081E1430 (void);
 extern void BulletParticleDisable_Update_mC8879A55F2A5C8DE96D50E6CC5EA6DEB9BCFABE8 (void);
 extern void BulletParticleDisable__ctor_m6609F696F695D4372F97300A279A1F16F5B047A9 (void);
-extern void Enemy_TakeDamage_mFC3B669129AD870E4B66062CE726585528F8701D (void);
-extern void Enemy__ctor_mB6697627910F785A971C20C671DEFBA9D921D933 (void);
+extern void EnemyDetection_OnTriggerEnter2D_m09E879680C64FD4C6DF7ACA60403CFA411733445 (void);
+extern void EnemyDetection_OnTriggerExit2D_m9DE307812CBB43107ABDEF7892DF97060A09CEA3 (void);
+extern void EnemyDetection__ctor_mCE5B5D94B1932D253DB9131F0F861EDB9E05C05D (void);
+extern void EnemyHealth_TakeDamage_m3E9F106DCC6C5E388ECFC2447F8126265C14389F (void);
+extern void EnemyHealth__ctor_m4ADD4CF1D414077D48BEB31F8B6EF010657BD687 (void);
+extern void EnemyMovement_Awake_m8E3589394AF4E557F303AA9B65B201F1781684FD (void);
+extern void EnemyMovement_Update_mE16B0A7E944111B195856D2256F3FF0587224158 (void);
+extern void EnemyMovement_enemyRotation_mAC30D37DBA7AB262A08EA0D8F4A848FB93B66BB5 (void);
+extern void EnemyMovement__ctor_mFA5BD794CC67E008E8043CBDB7CDFB437D26180B (void);
 extern void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (void);
 extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
 extern void JoystickController_get_Direction_m37CA24A8C2BE1A6CB73ADE955577D6B4ED9D73E1 (void);
@@ -69,7 +76,7 @@ extern void shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9 (void);
 extern void shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[62] = 
+static Il2CppMethodPointer s_methodPointers[69] = 
 {
 	AimController_Update_mF85209392F914800B41E0E458533FFA2CD268D04,
 	AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490,
@@ -89,8 +96,15 @@ static Il2CppMethodPointer s_methodPointers[62] =
 	BulletParticleDisable_Awake_m6600E740231A2CC7D9342AB90BFE5F6A081E1430,
 	BulletParticleDisable_Update_mC8879A55F2A5C8DE96D50E6CC5EA6DEB9BCFABE8,
 	BulletParticleDisable__ctor_m6609F696F695D4372F97300A279A1F16F5B047A9,
-	Enemy_TakeDamage_mFC3B669129AD870E4B66062CE726585528F8701D,
-	Enemy__ctor_mB6697627910F785A971C20C671DEFBA9D921D933,
+	EnemyDetection_OnTriggerEnter2D_m09E879680C64FD4C6DF7ACA60403CFA411733445,
+	EnemyDetection_OnTriggerExit2D_m9DE307812CBB43107ABDEF7892DF97060A09CEA3,
+	EnemyDetection__ctor_mCE5B5D94B1932D253DB9131F0F861EDB9E05C05D,
+	EnemyHealth_TakeDamage_m3E9F106DCC6C5E388ECFC2447F8126265C14389F,
+	EnemyHealth__ctor_m4ADD4CF1D414077D48BEB31F8B6EF010657BD687,
+	EnemyMovement_Awake_m8E3589394AF4E557F303AA9B65B201F1781684FD,
+	EnemyMovement_Update_mE16B0A7E944111B195856D2256F3FF0587224158,
+	EnemyMovement_enemyRotation_mAC30D37DBA7AB262A08EA0D8F4A848FB93B66BB5,
+	EnemyMovement__ctor_mFA5BD794CC67E008E8043CBDB7CDFB437D26180B,
 	GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F,
 	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
 	JoystickController_get_Direction_m37CA24A8C2BE1A6CB73ADE955577D6B4ED9D73E1,
@@ -134,7 +148,7 @@ static Il2CppMethodPointer s_methodPointers[62] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[62] = 
+static const int32_t s_InvokerIndices[69] = 
 {
 	16236,
 	16236,
@@ -154,7 +168,14 @@ static const int32_t s_InvokerIndices[62] =
 	16236,
 	16236,
 	16236,
+	12274,
+	12274,
+	16236,
 	12202,
+	16236,
+	16236,
+	16236,
+	16236,
 	16236,
 	16236,
 	16236,
@@ -203,7 +224,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	62,
+	69,
 	s_methodPointers,
 	0,
 	NULL,

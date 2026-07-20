@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour
 
           else if (other.CompareTag("Enemy"))
           {
-               Enemy enemy = other.GetComponent<Enemy>();
+               EnemyHealth enemy = other.GetComponent<EnemyHealth>();
                enemy.TakeDamage(1);
                bullet.SetActive(false);
                //Instantiate(bulletParticle, transform.position, Quaternion.identity);

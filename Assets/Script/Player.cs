@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
            }
            else
            {
-                Enemy enemy = other.GetComponent<Enemy>();
+                EnemyHealth enemy = other.GetComponent<EnemyHealth>();
                 enemy.TakeDamage(3);
                 Debug.Log("Hit!");
            }
