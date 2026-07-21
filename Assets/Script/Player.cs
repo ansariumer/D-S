@@ -74,9 +74,10 @@ public class Player : MonoBehaviour
         trail.time = FadeOutTime;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.CompareTag("Enemy"))
+        //Debug.Log("Player hit");
+        if (collision.gameObject.CompareTag("Enemy"))
         {
            if (!isDashing)
            {
@@ -84,7 +85,7 @@ public class Player : MonoBehaviour
            }
            else
            {
-                EnemyHealth enemy = other.GetComponent<EnemyHealth>();
+                EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
                 enemy.TakeDamage(3);
                 Debug.Log("Hit!");
            }

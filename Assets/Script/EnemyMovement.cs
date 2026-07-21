@@ -5,6 +5,7 @@ public class EnemyMovement : MonoBehaviour
     public Transform target;
     public float rotationSpeed;
     public bool isInside = false; 
+    public float speed = 5f;
 
     void Awake()
     {
@@ -16,6 +17,7 @@ public class EnemyMovement : MonoBehaviour
         if (isInside == true)
         {
             enemyRotation();
+            enemyChase();
         }
         else
         {
@@ -36,4 +38,9 @@ public class EnemyMovement : MonoBehaviour
         // Apply the rotation
         transform.rotation = targetRotation;
     } 
+
+    private void enemyChase()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+    }
 }
