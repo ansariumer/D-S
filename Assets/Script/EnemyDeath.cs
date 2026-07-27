@@ -8,6 +8,9 @@ public class EnemyDeath : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Blast();
+            PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
+            player.PlayerDamage(3);
+            Debug.Log("Cluster 💥");
         }        
     }
 
@@ -16,7 +19,7 @@ public class EnemyDeath : MonoBehaviour
         GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
 
             if (hitEffect != null)
-           {
+            {
                 hitEffect.transform.position = gameObject.transform.position;
                 hitEffect.SetActive(true);
             }

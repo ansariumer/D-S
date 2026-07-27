@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
            {
                 EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
                 enemy.TakeDamage(3);
-                Debug.Log("Hit!");
+                //Debug.Log("Hit!");
            }
         }
     }

@@ -63,6 +63,7 @@
     <Compile Include="Assets\Script\BulletCounter.cs" />
     <Compile Include="Assets\Script\reloadButton.cs" />
     <Compile Include="Assets\Script\JoystickController.cs" />
+    <Compile Include="Assets\Script\PlayerHealth.cs" />
     <Compile Include="Assets\Script\AimController.cs" />
   </ItemGroup>
   <ItemGroup>
