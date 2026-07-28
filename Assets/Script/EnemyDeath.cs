@@ -9,7 +9,7 @@ public class EnemyDeath : MonoBehaviour
         {
             Blast();
             PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
-            player.PlayerDamage(3);
+            player.PlayerDamage(1);
             Debug.Log("Cluster 💥");
         }        
     }

@@ -54,6 +54,9 @@ extern void Player_Dash_m1F848E7396DBC55D54C982DF41C3913086DA6261 (void);
 extern void Player_StopDash_m7611748A3743D53D5E57C223F6ABA927FD0EA10D (void);
 extern void Player_OnCollisionEnter2D_mFF1FC01C5038DA5AE81233398DEBEFFB5FA8AC41 (void);
 extern void Player__ctor_m0A83E0706592FC871B0CF188B37AFC6649F3D85D (void);
+extern void PlayerHealth_Awake_m694ED0820668275A13034B552675DA946A50B9B6 (void);
+extern void PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E (void);
+extern void PlayerHealth__ctor_m6A07958FCBF285AA65AB66D48C3EB198068F37BE (void);
 extern void bulletPooling_Awake_m88D0A38D36587B0F8A61F360604B237B7DB9DC99 (void);
 extern void bulletPooling_Start_m060C15696E9EB1E67D3FB61DD48E00F49DD9507E (void);
 extern void bulletPooling_GetPoolObject_m96403CBB675CE898C92E10F71C8DD2E723AA3EE9 (void);
@@ -80,7 +83,7 @@ extern void shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9 (void);
 extern void shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[73] = 
+static Il2CppMethodPointer s_methodPointers[76] = 
 {
 	AimController_Update_mF85209392F914800B41E0E458533FFA2CD268D04,
 	AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490,
@@ -129,6 +132,9 @@ static Il2CppMethodPointer s_methodPointers[73] =
 	Player_StopDash_m7611748A3743D53D5E57C223F6ABA927FD0EA10D,
 	Player_OnCollisionEnter2D_mFF1FC01C5038DA5AE81233398DEBEFFB5FA8AC41,
 	Player__ctor_m0A83E0706592FC871B0CF188B37AFC6649F3D85D,
+	PlayerHealth_Awake_m694ED0820668275A13034B552675DA946A50B9B6,
+	PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E,
+	PlayerHealth__ctor_m6A07958FCBF285AA65AB66D48C3EB198068F37BE,
 	bulletPooling_Awake_m88D0A38D36587B0F8A61F360604B237B7DB9DC99,
 	bulletPooling_Start_m060C15696E9EB1E67D3FB61DD48E00F49DD9507E,
 	bulletPooling_GetPoolObject_m96403CBB675CE898C92E10F71C8DD2E723AA3EE9,
@@ -156,7 +162,7 @@ static Il2CppMethodPointer s_methodPointers[73] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[73] = 
+static const int32_t s_InvokerIndices[76] = 
 {
 	16236,
 	16236,
@@ -206,6 +212,9 @@ static const int32_t s_InvokerIndices[73] =
 	12274,
 	16236,
 	16236,
+	12202,
+	16236,
+	16236,
 	16236,
 	15992,
 	16236,
@@ -236,7 +245,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	73,
+	76,
 	s_methodPointers,
 	0,
 	NULL,
