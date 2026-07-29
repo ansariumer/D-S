@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 6656666799247955257}
   - component: {fileID: 6427849502304484515}
   - component: {fileID: 4860663468216376446}
+  - component: {fileID: 4606386159969839376}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -256,3 +257,16 @@ MonoBehaviour:
   rotationSpeed: 5
   isInside: 0
   speed: 2
+--- !u!114 &4606386159969839376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4005987726652850066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38db11785de97eb40a6014b67f94c782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDeath
+  player: {fileID: 703516587150685852, guid: 9195443461816a14a91447fc38b93698, type: 3}

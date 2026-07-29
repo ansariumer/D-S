@@ -1347,6 +1347,7 @@ struct BulletParticleDisable_t6F206A46B93A00C360A6F0407F5086AC89F3D617  : public
 };
 struct EnemyDeath_t7BC723C142E66F33CFDA14BEFD015F44FC65033B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* ___player;
 };
 struct EnemyDetection_t57EE6B4E24C253C45CDDA5C21752D0A0C2C583BB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -2007,6 +2008,10 @@ inline PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263* GameObject_GetCom
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E (PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263* __this, int32_t ___0_damage, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+inline EnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D* GameObject_GetComponent_TisEnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D_mDE5B66F790D9148B5F13CFEBD2116434429E85CA (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  EnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_FindWithTag_mDF825E000B03F4F3DE9D4F2EBABC96BFA34B62E5 (String_t* ___0_tag, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnemyMovement_enemyRotation_mAC30D37DBA7AB262A08EA0D8F4A848FB93B66BB5 (EnemyMovement_t4EB72613E533CC1548DC956119D38F9ED643C48C* __this, const RuntimeMethod* method) ;
@@ -2048,10 +2053,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector2_op_Inequality_mBEA93
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_up_m1FBA5A97E5057747AC027AD5897EDE80A554D554 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody2D_set_linearVelocity_mD4C890DE3DF15ECAD0DC61675586C0D1998CC1BB (Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_Invoke_mF724350C59362B0F1BFE26383209A274A29A63FB (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, String_t* ___0_methodName, float ___1_time, const RuntimeMethod* method) ;
-inline EnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D* GameObject_GetComponent_TisEnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D_mDE5B66F790D9148B5F13CFEBD2116434429E85CA (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
-{
-	return ((  EnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Slider_set_maxValue_m43F3BF47C6D7063D80C578FD9B95AD88494203BE (Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Gradient_Evaluate_m332A32F48EA3F884CB55D74131DF8064F29F9C32 (Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* __this, float ___0_time, const RuntimeMethod* method) ;
@@ -2773,13 +2774,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnemyDeath_OnCollisionEnter2D_m1D5D498AB
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisEnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D_mDE5B66F790D9148B5F13CFEBD2116434429E85CA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67BCF2B7F5A69C1C14191B4255FD540886346897);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:8>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:9>
 		Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B* L_0 = ___0_collision;
 		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
@@ -2789,31 +2791,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnemyDeath_OnCollisionEnter2D_m1D5D498AB
 		L_2 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_1, _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70, NULL);
 		if (!L_2)
 		{
-			goto IL_0033;
+			goto IL_0052;
 		}
 	}
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:10>
-		EnemyDeath_Blast_m4079F5920E69761EF61D8EF3D94417189FDD218E(__this, NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:11>
-		Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B* L_3 = ___0_collision;
+		Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* L_3 = __this->___player;
 		NullCheck(L_3);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
-		L_4 = Collision2D_get_gameObject_mE4B3D56F3477F7D2D6D7B217DF5488DA1D13204C(L_3, NULL);
-		NullCheck(L_4);
-		PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263* L_5;
-		L_5 = GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE(L_4, GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE_RuntimeMethod_var);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:12>
-		NullCheck(L_5);
-		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_5, 1, NULL);
+		bool L_4 = L_3->___isDashing;
+		if (L_4)
+		{
+			goto IL_0041;
+		}
+	}
+	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:13>
+		EnemyDeath_Blast_m4079F5920E69761EF61D8EF3D94417189FDD218E(__this, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:14>
+		Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B* L_5 = ___0_collision;
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Collision2D_get_gameObject_mE4B3D56F3477F7D2D6D7B217DF5488DA1D13204C(L_5, NULL);
+		NullCheck(L_6);
+		PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263* L_7;
+		L_7 = GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE(L_6, GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE_RuntimeMethod_var);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:15>
+		NullCheck(L_7);
+		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_7, 1, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:16>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral67BCF2B7F5A69C1C14191B4255FD540886346897, NULL);
+		return;
 	}
 
-IL_0033:
+IL_0041:
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:15>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:20>
+		Collision2D_t81E83212C969FDDE2AB84EBCA31502818EEAB85B* L_8 = ___0_collision;
+		NullCheck(L_8);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
+		L_9 = Collision2D_get_gameObject_mE4B3D56F3477F7D2D6D7B217DF5488DA1D13204C(L_8, NULL);
+		NullCheck(L_9);
+		EnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D* L_10;
+		L_10 = GameObject_GetComponent_TisEnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D_mDE5B66F790D9148B5F13CFEBD2116434429E85CA(L_9, GameObject_GetComponent_TisEnemyHealth_t2937DFCC8299F967896C0B08F9D3E3F2816AA53D_mDE5B66F790D9148B5F13CFEBD2116434429E85CA_RuntimeMethod_var);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:21>
+		NullCheck(L_10);
+		EnemyHealth_TakeDamage_m3E9F106DCC6C5E388ECFC2447F8126265C14389F(L_10, 3, NULL);
+	}
+
+IL_0052:
+	{
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:24>
 		return;
 	}
 }
@@ -2829,13 +2857,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnemyDeath_Blast_m4079F5920E69761EF61D8E
 	}
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:19>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:28>
 		BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D* L_0 = ((BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_StaticFields*)il2cpp_codegen_static_fields_for(BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_il2cpp_TypeInfo_var))->___instance;
 		NullCheck(L_0);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
 		L_1 = BulletParPooling_GetPoolObject_m53553C21945FB4E5929A1E6EDB0E5218D79E433A(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:21>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:30>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -2846,7 +2874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnemyDeath_Blast_m4079F5920E69761EF61D8E
 		}
 	}
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:23>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:32>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = V_0;
 		NullCheck(L_4);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
@@ -2861,7 +2889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnemyDeath_Blast_m4079F5920E69761EF61D8E
 		L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
 		NullCheck(L_5);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_5, L_8, NULL);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:24>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:33>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = V_0;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)1, NULL);
@@ -2869,12 +2897,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnemyDeath_Blast_m4079F5920E69761EF61D8E
 
 IL_0036:
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:26>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:35>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
 		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_10, NULL);
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:27>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/EnemyDeath.cs:36>
 		return;
 	}
 }

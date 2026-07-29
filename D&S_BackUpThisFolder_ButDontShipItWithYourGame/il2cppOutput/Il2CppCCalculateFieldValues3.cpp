@@ -5352,6 +5352,10 @@ struct BulletParticleDisable_t6F206A46B93A00C360A6F0407F5086AC89F3D617  : public
 {
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ps;
 };
+struct EnemyDeath_t7BC723C142E66F33CFDA14BEFD015F44FC65033B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* ___player;
+};
 struct EnemyDetection_t57EE6B4E24C253C45CDDA5C21752D0A0C2C583BB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	EnemyMovement_t4EB72613E533CC1548DC956119D38F9ED643C48C* ___enemyMovement;
@@ -6981,6 +6985,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9564[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9565[1] = 
 {
 	static_cast<int32_t>(offsetof(BulletParticleDisable_t6F206A46B93A00C360A6F0407F5086AC89F3D617, ___ps)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9566[1] = 
+{
+	static_cast<int32_t>(offsetof(EnemyDeath_t7BC723C142E66F33CFDA14BEFD015F44FC65033B, ___player)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9567[1] = 
 {
 	static_cast<int32_t>(offsetof(EnemyDetection_t57EE6B4E24C253C45CDDA5C21752D0A0C2C583BB, ___enemyMovement)),};
