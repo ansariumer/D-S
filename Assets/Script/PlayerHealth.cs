@@ -5,12 +5,14 @@ using System.Collections.Generic;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField]
-    private float health = 3f;
+    //[SerializeField]
+    public float health = 3f;
 
     public Slider slider;
     public Gradient gradient;
     public Image fill;
+
+    public GameOver gameOver;
 
     void Awake()
     {
@@ -26,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (health <= 0)
         {
+            gameOver.GameOverP();
             Destroy(gameObject);
         }
     }
