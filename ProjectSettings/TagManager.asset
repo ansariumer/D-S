@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - Dacenta
+  - Scholler
+  - Blasto
   layers:
   - Default
   - TransparentFX
