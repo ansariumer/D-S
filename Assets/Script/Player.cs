@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Shap change
         if (isDashing)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, targetScale, smoothspeed * Time.deltaTime);

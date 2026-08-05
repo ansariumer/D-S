@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class BlastoMovement : MonoBehaviour
 {
     public Transform target;
     public float rotationSpeed;
@@ -42,5 +42,6 @@ public class EnemyMovement : MonoBehaviour
     private void enemyChase()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                                                // currentPosition, targetPosition, speed;
     }
 }

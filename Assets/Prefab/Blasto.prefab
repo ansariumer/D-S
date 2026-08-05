@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3451640549604016870}
   - component: {fileID: 8852982110932813867}
   m_Layer: 0
-  m_Name: EnemyDetection
+  m_Name: BlastoDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26df4895035ac054395b297be9f45d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDetection
-  enemyMovement: {fileID: 4860663468216376446}
+  blastoMovement: {fileID: 4860663468216376446}
 --- !u!1 &4005987726652850066
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.7231331, a: 1}
+  m_Color: {r: 1, g: 0.216981, b: 0.7819829, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -240,7 +240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9585e689d2a807449b9098acf33b46b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  health: 3
+  maxHealth: 3
+  enemyDeath: {fileID: 4606386159969839376}
 --- !u!114 &4860663468216376446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,4 +270,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38db11785de97eb40a6014b67f94c782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDeath
-  player: {fileID: 703516587150685852, guid: 9195443461816a14a91447fc38b93698, type: 3}

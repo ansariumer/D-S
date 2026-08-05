@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class EnemyDetection : MonoBehaviour
+public class DacentaDetection : MonoBehaviour
 {
-    public EnemyMovement enemyMovement;
+    public DacentaMovement dacentaMovement;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            enemyMovement.isInside = true;
+            dacentaMovement.isInside = true;
         }
     }
 
@@ -16,7 +16,8 @@ public class EnemyDetection : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            enemyMovement.isInside = false;
+            dacentaMovement.isInside = false;
         }
     }
+
 }
