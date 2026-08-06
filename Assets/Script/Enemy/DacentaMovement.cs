@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class DacentaMovement : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class DacentaMovement : MonoBehaviour
     private Vector2 dashVelocity;
     public float dashSpeed = 20f;
 
+
     void Awake()
     {
         target = GameObject.FindWithTag("Player").transform;
@@ -26,16 +28,19 @@ public class DacentaMovement : MonoBehaviour
             enemyRotation();
             enemyChase();
         }
-        else if (isInsideDash == true)
+        /*else if (isInsideDash == true)
         {
             Dash();
-        }
+        }*/
         else
         {
             return;
         }
 
-        
+        if (isInsideDash == true)
+        {
+            StartCoroutine(Dash());
+        }
     }
 
     private void enemyRotation()
@@ -54,12 +59,16 @@ public class DacentaMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
     }
 
-    public void Dash()
+    public IEnumerator Dash()
     {
         isDashing = true;
         Vector2 direction = (target.position - transform.position).normalized;
         dashVelocity = direction * dashSpeed;
         transform.position += (Vector3)(dashVelocity * Time.deltaTime);
+
+        yield return new WaitForSeconds(dashTime);
+
+        isDashing = false;
     }
 
 }

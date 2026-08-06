@@ -8,6 +8,7 @@ public class DashDetection : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            //Debug.Log("Dash area entered");
             dacentaMovement.isInsideDash = true;
         }
     }

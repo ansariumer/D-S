@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour
 
     private int currentHealth;
 
-    public EnemyDeath enemyDeath;
+    public BlastoDeath blastoDeath;
 
     void Awake()
     {
@@ -19,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
         
         if (currentHealth <= 0)
         {
-            enemyDeath.Blast();
+            blastoDeath.Blast();
         }
     }
 }

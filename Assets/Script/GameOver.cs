@@ -20,7 +20,7 @@ public class GameOver : MonoBehaviour
         GameOverPanel.SetActive(true);
         restartBtn.interactable = true;
 
-        Time.timeScale = 0f; //Game Pause
+        //Time.timeScale = 0f; //Game Pause
     }
 
     public void Restart(string sceneName)

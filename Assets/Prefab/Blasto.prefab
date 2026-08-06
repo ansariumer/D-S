@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   maxHealth: 3
-  enemyDeath: {fileID: 4606386159969839376}
+  blastoDeath: {fileID: 4606386159969839376}
 --- !u!114 &4860663468216376446
 MonoBehaviour:
   m_ObjectHideFlags: 0
