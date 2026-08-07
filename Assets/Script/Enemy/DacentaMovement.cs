@@ -4,42 +4,43 @@ using System.Collections;
 public class DacentaMovement : MonoBehaviour
 {
     public Transform target;
+
+    [Header("Movement")]
     public float rotationSpeed;
-    public bool isInside;
     public float speed = 7f;
 
-    //Dash
     public bool isInsideDash;
-    public float dashTime = 0.5f;
-    public bool isDashing;
-    private Vector2 dashVelocity;
-    public float dashSpeed = 20f;
+    public bool isInside;
 
+    [Header("Dash")]
+    public float dashTime = 0.5f;
+    public float dashSpeed = 20f;
+    public float dashCooldown = 2f;
+
+    private bool isDashing = false;
+    private bool canDash = true;
+
+    private Vector2 dashTarget;
 
     void Awake()
     {
-        target = GameObject.FindWithTag("Player").transform;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
-        if (isInside == true)
+        if (!isDashing)
         {
-            enemyRotation();
-            enemyChase();
-        }
-        /*else if (isInsideDash == true)
-        {
-            Dash();
-        }*/
-        else
-        {
-            return;
-        }
+            if (isInside)
+            {
+                enemyRotation();
+                enemyChase();
+            }
 
-        if (isInsideDash == true)
-        {
-            StartCoroutine(Dash());
+            if (isInsideDash && canDash)
+            {
+                StartCoroutine(Dash());
+            }
         }
     }
 
@@ -51,24 +52,48 @@ public class DacentaMovement : MonoBehaviour
 
         Quaternion targetRotation = Quaternion.Euler(0, 0, angle - 90f);
 
-        transform.rotation = targetRotation;
+        transform.rotation = Quaternion.Lerp(
+            transform.rotation,
+            targetRotation,
+            rotationSpeed * Time.deltaTime);
     }
 
     private void enemyChase()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(
+            transform.position,
+            target.position,
+            speed * Time.deltaTime);
     }
 
     public IEnumerator Dash()
     {
+        canDash = false;
         isDashing = true;
-        Vector2 direction = (target.position - transform.position).normalized;
-        dashVelocity = direction * dashSpeed;
-        transform.position += (Vector3)(dashVelocity * Time.deltaTime);
+        
+        //Lock the players position
+        dashTarget = target.position;
 
-        yield return new WaitForSeconds(dashTime);
+        Vector2 dashDirection = (dashTarget - (Vector2)transform.position).normalized;
 
+        // Face the dash direction
+        float angle = Mathf.Atan2(dashDirection.y, dashDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
+
+        float timer = 0f;
+
+        while (timer < dashTime)
+        {
+            transform.position += (Vector3)(dashDirection * dashSpeed * Time.deltaTime);
+            timer += Time.deltaTime;
+            yield return null;
+        }
+        
         isDashing = false;
-    }
 
+        yield return new WaitForSeconds(dashCooldown);
+
+        canDash = true;
+    }
 }
+
