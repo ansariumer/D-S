@@ -54,6 +54,7 @@
     <Compile Include="Assets\Script\Enemy\BlastoMovement.cs" />
     <Compile Include="Assets\Script\Enemy\BlastoDeath.cs" />
     <Compile Include="Assets\Script\EnemyHealth.cs" />
+    <Compile Include="Assets\Script\WarningBlink.cs" />
     <Compile Include="Assets\Script\dashButton.cs" />
     <Compile Include="Assets\Script\BulletParticleDisable.cs" />
     <Compile Include="Assets\Script\BulletParPooling.cs" />

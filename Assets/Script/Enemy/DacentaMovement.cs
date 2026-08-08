@@ -22,25 +22,58 @@ public class DacentaMovement : MonoBehaviour
 
     private Vector2 dashTarget;
 
+    //Taril
+    private TrailRenderer trail;
+    [SerializeField] private float FadeOutTime = 0.2f;
+
+    //Scale
+    private Vector3 originalScale;
+    private Vector3 targetScale = new Vector2(0.7f, 1f); 
+    [SerializeField] private float changeSpeed = 5f; 
+
+    //Warning
+    [SerializeField] private float dashWarningTime = 0.8f;
+    [SerializeField] private GameObject dashWarning;
+
+    private bool isWarning = false;
+
     void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
+
+        originalScale = transform.localScale;
+
+        trail = GetComponentInChildren<TrailRenderer>();
+        trail.emitting = false;
+
+        dashWarning.SetActive(false);
+
     }
 
     void Update()
     {
         if (!isDashing)
         {
+            transform.localScale = Vector3.Lerp(transform.localScale, originalScale, changeSpeed * Time.deltaTime);
+
             if (isInside)
             {
                 enemyRotation();
                 enemyChase();
             }
 
-            if (isInsideDash && canDash)
+            if (isInsideDash && canDash && !isWarning)
             {
-                StartCoroutine(Dash());
+                StartCoroutine(DashWarning());
             }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (isDashing)
+        {
+            transform.localScale = Vector3.Lerp(transform.localScale, targetScale, changeSpeed * Time.deltaTime);
         }
     }
 
@@ -70,6 +103,9 @@ public class DacentaMovement : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+
+        trail.time = dashTime;
+        trail.emitting = true;
         
         //Lock the players position
         dashTarget = target.position;
@@ -90,10 +126,28 @@ public class DacentaMovement : MonoBehaviour
         }
         
         isDashing = false;
+        
+        trail.emitting = false;
+        trail.time = FadeOutTime;
 
         yield return new WaitForSeconds(dashCooldown);
 
         canDash = true;
+    }
+
+    private IEnumerator DashWarning()
+    {
+        isWarning = true;
+
+        dashWarning.SetActive(true);
+
+        yield return new WaitForSeconds(dashWarningTime); 
+
+        dashWarning.SetActive(false);
+        
+        StartCoroutine(Dash());
+
+        isWarning = false;
     }
 }
 
