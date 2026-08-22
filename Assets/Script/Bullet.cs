@@ -18,9 +18,24 @@ public class Bullet : MonoBehaviour
                gameObject.SetActive(false);
           }
 
-          else if (other.CompareTag("Enemy"))
+          else if (other.CompareTag("Blasto"))
           {
-               EnemyHealth enemy = other.GetComponent<EnemyHealth>();
+               BlastoHealth enemy = other.GetComponent<BlastoHealth>();
+               enemy.TakeDamage(1);
+               bullet.SetActive(false);
+               //Instantiate(bulletParticle, transform.position, Quaternion.identity);
+               GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
+
+               if (hitEffect != null)
+               {
+                    hitEffect.transform.position = bullet.transform.position;
+                    hitEffect.SetActive(true);
+               }
+               
+          }
+          else if (other.CompareTag("Dacenta"))
+          {
+               BlastoHealth enemy = other.GetComponent<BlastoHealth>();
                enemy.TakeDamage(1);
                bullet.SetActive(false);
                //Instantiate(bulletParticle, transform.position, Quaternion.identity);

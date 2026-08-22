@@ -86,10 +86,23 @@ public class Player : MonoBehaviour
            }
            else
            {
-                EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
+                BlastoHealth enemy = collision.gameObject.GetComponent<BlastoHealth>();
                 enemy.TakeDamage(3);
                 //Debug.Log("Hit!");
            }
+        }
+
+        if (collision.gameObject.CompareTag("Dacenta"))
+        {
+            if(!isDashing)
+            {
+                return;
+            }
+            else
+            {
+                DacentaHealth enemy = collision.gameObject.GetComponent<DacentaHealth>();
+                enemy.TakeDamage(3);
+            }
         }
     }
 }

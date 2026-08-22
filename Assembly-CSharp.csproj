@@ -48,29 +48,30 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.17f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Enemy\DacentaDetection.cs" />
-    <Compile Include="Assets\Script\Enemy\BlastoDetection.cs" />
+    <Compile Include="Assets\Script\Enemy\Dacenta\DashDetection.cs" />
     <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\Enemy\BlastoMovement.cs" />
-    <Compile Include="Assets\Script\Enemy\BlastoDeath.cs" />
-    <Compile Include="Assets\Script\EnemyHealth.cs" />
+    <Compile Include="Assets\Script\Enemy\Blasto\BlastoMovement.cs" />
     <Compile Include="Assets\Script\WarningBlink.cs" />
     <Compile Include="Assets\Script\dashButton.cs" />
+    <Compile Include="Assets\Script\Enemy\Blasto\BlastoHealth.cs" />
     <Compile Include="Assets\Script\BulletParticleDisable.cs" />
     <Compile Include="Assets\Script\BulletParPooling.cs" />
+    <Compile Include="Assets\Script\Enemy\Dacenta\DacentaMovement.cs" />
     <Compile Include="Assets\Script\shootButton.cs" />
-    <Compile Include="Assets\Script\Enemy\DacentaDeath.cs" />
-    <Compile Include="Assets\Script\Enemy\DacentaMovement.cs" />
+    <Compile Include="Assets\Script\Enemy\Dacenta\DacentaDetection.cs" />
     <Compile Include="Assets\Script\bulletPooling.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
+    <Compile Include="Assets\Script\Enemy\Blasto\BlastoKill.cs" />
     <Compile Include="Assets\Script\BulletCounter.cs" />
     <Compile Include="Assets\Script\GameOver.cs" />
+    <Compile Include="Assets\Script\Enemy\Dacenta\DacentaHealth.cs" />
+    <Compile Include="Assets\Script\Enemy\Dacenta\DacentaKill.cs" />
     <Compile Include="Assets\Script\reloadButton.cs" />
     <Compile Include="Assets\Script\JoystickController.cs" />
     <Compile Include="Assets\Script\PlayerHealth.cs" />
-    <Compile Include="Assets\Script\Enemy\DashDetection.cs" />
     <Compile Include="Assets\Script\AimController.cs" />
+    <Compile Include="Assets\Script\Enemy\Blasto\BlastoDetection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
