@@ -4,6 +4,7 @@ using TMPro;
 public class FlickerText : MonoBehaviour
 {
     private TMP_Text text;
+    public GameObject dacenta;
 
     [SerializeField] private float minInterval = 0.02f;
     [SerializeField] private float maxInterval = 0.12f;
@@ -14,22 +15,31 @@ public class FlickerText : MonoBehaviour
     private void Awake()
     {
         text = GetComponent<TMP_Text>();
+        dacenta = GameObject.FindGameObjectWithTag("Dacenta");
+        visible = false;
+        text.alpha = 0f;
     }
 
     private void Update()
     {
-        timer -= Time.deltaTime;
-
-        if (timer <= 0f)
+        if (dacenta != null)
         {
-            // Randomly change visibility
-            visible = Random.value > 0.25f;
+            timer -= Time.deltaTime;
 
-            text.alpha = visible ? 1f : 0f;
+            if (timer <= 0f)
+            {
+                // Randomly change visibility
+                visible = Random.value > 0.25f;
 
-            // Random time until the next flicker
-            timer = Random.Range(minInterval, maxInterval);
+                text.alpha = visible ? 1f : 0f;
+
+                // Random time until the next flicker
+                timer = Random.Range(minInterval, maxInterval);
+            }
+        }
+        else
+        {
+            return;
         }
     }
 }
-

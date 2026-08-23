@@ -35,7 +35,7 @@ public class Bullet : MonoBehaviour
           }
           else if (other.CompareTag("Dacenta"))
           {
-               BlastoHealth enemy = other.GetComponent<BlastoHealth>();
+               DacentaHealth enemy = other.GetComponent<DacentaHealth>();
                enemy.TakeDamage(1);
                bullet.SetActive(false);
                //Instantiate(bulletParticle, transform.position, Quaternion.identity);
