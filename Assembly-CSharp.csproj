@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Enemy\Dacenta\DashDetection.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\CameraZoom.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoMovement.cs" />
     <Compile Include="Assets\Script\WarningBlink.cs" />
     <Compile Include="Assets\Script\dashButton.cs" />
