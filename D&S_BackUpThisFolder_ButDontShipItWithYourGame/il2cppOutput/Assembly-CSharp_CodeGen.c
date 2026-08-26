@@ -25,6 +25,8 @@ extern void BulletParPooling__ctor_m1C534885F5668901C3415F505F0CD762CB036D5D (vo
 extern void BulletParticleDisable_Awake_m6600E740231A2CC7D9342AB90BFE5F6A081E1430 (void);
 extern void BulletParticleDisable_Update_mC8879A55F2A5C8DE96D50E6CC5EA6DEB9BCFABE8 (void);
 extern void BulletParticleDisable__ctor_m6609F696F695D4372F97300A279A1F16F5B047A9 (void);
+extern void CameraZoom_Update_m21BCF8E9AA72146521FF8A3D2E99321BC473DCB8 (void);
+extern void CameraZoom__ctor_m2B29DFC884E748FEF181E25F4955BB0460C9C413 (void);
 extern void BlastoDetection_OnTriggerEnter2D_m167F4CAB7EFA3EE0D78A8CEE727CE50B5D10D6E2 (void);
 extern void BlastoDetection_OnTriggerExit2D_m5082965B1166DF8A3A31E81005F85663CDC555BC (void);
 extern void BlastoDetection__ctor_mCC9F44D57942A092C802788C048508D9B6775008 (void);
@@ -123,7 +125,7 @@ extern void shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9 (void);
 extern void shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[116] = 
+static Il2CppMethodPointer s_methodPointers[118] = 
 {
 	AimController_Update_mF85209392F914800B41E0E458533FFA2CD268D04,
 	AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490,
@@ -143,6 +145,8 @@ static Il2CppMethodPointer s_methodPointers[116] =
 	BulletParticleDisable_Awake_m6600E740231A2CC7D9342AB90BFE5F6A081E1430,
 	BulletParticleDisable_Update_mC8879A55F2A5C8DE96D50E6CC5EA6DEB9BCFABE8,
 	BulletParticleDisable__ctor_m6609F696F695D4372F97300A279A1F16F5B047A9,
+	CameraZoom_Update_m21BCF8E9AA72146521FF8A3D2E99321BC473DCB8,
+	CameraZoom__ctor_m2B29DFC884E748FEF181E25F4955BB0460C9C413,
 	BlastoDetection_OnTriggerEnter2D_m167F4CAB7EFA3EE0D78A8CEE727CE50B5D10D6E2,
 	BlastoDetection_OnTriggerExit2D_m5082965B1166DF8A3A31E81005F85663CDC555BC,
 	BlastoDetection__ctor_mCC9F44D57942A092C802788C048508D9B6775008,
@@ -242,7 +246,7 @@ static Il2CppMethodPointer s_methodPointers[116] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[116] = 
+static const int32_t s_InvokerIndices[118] = 
 {
 	16237,
 	16237,
@@ -258,6 +262,8 @@ static const int32_t s_InvokerIndices[116] =
 	16237,
 	16237,
 	15993,
+	16237,
+	16237,
 	16237,
 	16237,
 	16237,
@@ -365,7 +371,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	116,
+	118,
 	s_methodPointers,
 	0,
 	NULL,

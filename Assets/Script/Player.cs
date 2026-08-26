@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     private TrailRenderer trail;
     [SerializeField] private float FadeOutTime = 0.2f;
 
+    public CameraZoom cameraZoom;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -63,11 +65,11 @@ public class Player : MonoBehaviour
 
         trail.time = dashTime;
         trail.emitting = true;
-
+        
         Invoke(nameof(StopDash), dashTime);
     }
     
-    void StopDash()
+    public void StopDash()
     {
         isDashing = false;
 
