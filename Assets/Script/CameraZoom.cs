@@ -6,7 +6,7 @@ public class CameraZoom : MonoBehaviour
     public CinemachineCamera cam;
     public Player player;
 
-    public float normalZoom = 5f;
+    public float normalZoom = 6.5f;
     public float dashZoom = 10f;
     public float zoomSpeed = 10f;
 

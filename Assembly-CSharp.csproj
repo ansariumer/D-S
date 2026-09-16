@@ -72,6 +72,8 @@
     <Compile Include="Assets\Script\JoystickController.cs" />
     <Compile Include="Assets\Script\PlayerHealth.cs" />
     <Compile Include="Assets\Script\AimController.cs" />
+    <Compile Include="Assets\Script\PauseMenu.cs" />
+    <Compile Include="Assets\Script\StartMenu.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoDetection.cs" />
   </ItemGroup>
   <ItemGroup>

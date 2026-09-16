@@ -9,6 +9,7 @@ TagManager:
   - Dacenta
   - Scholler
   - Blasto
+  - R
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - UI
   - Player
   - Trail
-  - 
+  - BG
   - 
   - 
   - 
@@ -43,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: bg
+    uniqueID: 1569822229
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

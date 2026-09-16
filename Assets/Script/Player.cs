@@ -3,6 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public JoystickController joystickMove;
+    public BulletCounter bulletCounter;
 
     public float speed = 10f;
     public float dash = 20f;
@@ -105,6 +106,32 @@ public class Player : MonoBehaviour
                 DacentaHealth enemy = collision.gameObject.GetComponent<DacentaHealth>();
                 enemy.TakeDamage(3);
             }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("R"))
+        {/*
+            if (bulletCounter.currentCount == bulletCounter.Fit)
+            {
+                return;
+            }
+
+            else
+            Debug.Log("Refill");
+            bulletCounter.totalCount = bulletCounter.Fit;
+            bulletCounter.currentCount = bulletCounter.Fit;*/
+            if (other.CompareTag("R"))
+            {
+                bulletCounter.totalCount = bulletCounter.Fit;
+                bulletCounter.currentCount = bulletCounter.Fit;
+
+                bulletCounter.RefreshUI();
+
+                Debug.Log("Ammo Refilled");
+            }
+
         }
     }
 }
