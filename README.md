@@ -1,6 +1,6 @@
 # D&S (Dash & Shoot)
 
-A survival shooter game made in Unity using C#.
+A survival dash and shoot game made in Unity using C#.
 
 ## Engine
 Unity
