@@ -14,6 +14,8 @@ public class PlayerHealth : MonoBehaviour
 
     public GameOver gameOver;
 
+    public CameraShake camShake;
+
     void Awake()
     {
         slider.maxValue = health;
@@ -25,6 +27,8 @@ public class PlayerHealth : MonoBehaviour
         health -= damage;
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
+
+        camShake.ShakeCamera();
 
         if (health <= 0)
         {

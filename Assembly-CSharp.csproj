@@ -54,6 +54,7 @@
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoMovement.cs" />
     <Compile Include="Assets\Script\WarningBlink.cs" />
     <Compile Include="Assets\Script\dashButton.cs" />
+    <Compile Include="Assets\Script\CameraShake.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoHealth.cs" />
     <Compile Include="Assets\Script\BulletParticleDisable.cs" />
     <Compile Include="Assets\Script\BulletParPooling.cs" />
