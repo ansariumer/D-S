@@ -48,5 +48,20 @@ public class Bullet : MonoBehaviour
                }
                
           }
+          else if (other.CompareTag("Scholler"))
+          {
+               SchollerHealth enemy = other.GetComponent<SchollerHealth>();
+               enemy.TakeDamage(1);
+               bullet.SetActive(false);
+               //Instantiate(bulletParticle, transform.position, Quaternion.identity);
+               GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
+
+               if (hitEffect != null)
+               {
+                    hitEffect.transform.position = bullet.transform.position;
+                    hitEffect.SetActive(true);
+               }
+               
+          }
    }
 }

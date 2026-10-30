@@ -11072,7 +11072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineImpulseSource
   ImpulseDefinition:
     ImpulseChannel: 1
-    ImpulseShape: 1
+    ImpulseShape: 2
     CustomImpulseShape:
       serializedVersion: 2
       m_Curve: []
@@ -14457,6 +14457,75 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1601199923}
   m_SourcePrefab: {fileID: 100100000, guid: 9195443461816a14a91447fc38b93698, type: 3}
+--- !u!1001 &1456168531001723390
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467551922249666806, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2928597772445985655, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750455296838739120, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_Name
+      value: Scholler
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750455296838739120, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_TagString
+      value: Scholler
+      objectReference: {fileID: 0}
+    - target: {fileID: 9159150660403770135, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74a7758846b5a334e8e81ec40fd11db8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -14472,3 +14541,4 @@ SceneRoots:
   - {fileID: 671123917}
   - {fileID: 499949431}
   - {fileID: 942316605}
+  - {fileID: 1456168531001723390}

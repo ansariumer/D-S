@@ -50,6 +50,9 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Enemy\Dacenta\DashDetection.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\Enemy\Scholler\SchollerKill.cs" />
+    <Compile Include="Assets\Script\Enemy\Scholler\SchollerHealth.cs" />
+    <Compile Include="Assets\Script\Enemy\Scholler\SchollerMovement.cs" />
     <Compile Include="Assets\Script\CameraZoom.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoMovement.cs" />
     <Compile Include="Assets\Script\WarningBlink.cs" />
@@ -66,12 +69,14 @@
     <Compile Include="Assets\Script\Bullet.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoKill.cs" />
     <Compile Include="Assets\Script\BulletCounter.cs" />
+    <Compile Include="Assets\Script\Enemy\Scholler\SchollerDetection.cs" />
     <Compile Include="Assets\Script\GameOver.cs" />
     <Compile Include="Assets\Script\Enemy\Dacenta\DacentaHealth.cs" />
     <Compile Include="Assets\Script\Enemy\Dacenta\DacentaKill.cs" />
     <Compile Include="Assets\Script\reloadButton.cs" />
     <Compile Include="Assets\Script\JoystickController.cs" />
     <Compile Include="Assets\Script\PlayerHealth.cs" />
+    <Compile Include="Assets\Script\Enemy\Scholler\S_DashDetection.cs" />
     <Compile Include="Assets\Script\AimController.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
     <Compile Include="Assets\Script\StartMenu.cs" />
