@@ -3,12 +3,15 @@ using System.Collections;
 
 public class SchollerMovement : MonoBehaviour
 {
-     public Transform target;
+    public Transform target;
+
+    public SchollerShoot schollerShoot;
 
     [Header("Movement")]
     public float rotationSpeed;
     public float speed = 7f;
 
+    public bool isInsideShoot;
     public bool isInsideDash;
     public bool isInside;
 
@@ -66,6 +69,11 @@ public class SchollerMovement : MonoBehaviour
             {
                 StartCoroutine(DashWarning());
             }
+        }
+
+        if(isInsideShoot)
+        {
+            schollerShoot.Shoot();
         }
     }
 
@@ -149,4 +157,5 @@ public class SchollerMovement : MonoBehaviour
 
         isWarning = false;
     }
+
 }

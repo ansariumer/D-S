@@ -48,11 +48,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.17f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Enemy\Scholler\Shoot_Detection.cs" />
     <Compile Include="Assets\Script\Enemy\Dacenta\DashDetection.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\Enemy\Scholler\SchollerKill.cs" />
     <Compile Include="Assets\Script\Enemy\Scholler\SchollerHealth.cs" />
     <Compile Include="Assets\Script\Enemy\Scholler\SchollerMovement.cs" />
+    <Compile Include="Assets\Script\Enemy\Scholler\SchollerShoot.cs" />
     <Compile Include="Assets\Script\CameraZoom.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoMovement.cs" />
     <Compile Include="Assets\Script\WarningBlink.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="Assets\Script\Enemy\Dacenta\DacentaKill.cs" />
     <Compile Include="Assets\Script\reloadButton.cs" />
     <Compile Include="Assets\Script\JoystickController.cs" />
+    <Compile Include="Assets\Script\Enemy\Scholler\Ebullet.cs" />
     <Compile Include="Assets\Script\PlayerHealth.cs" />
     <Compile Include="Assets\Script\Enemy\Scholler\S_DashDetection.cs" />
     <Compile Include="Assets\Script\AimController.cs" />
