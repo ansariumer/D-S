@@ -12,7 +12,7 @@ public class SchollerKill : MonoBehaviour
             {
                 Blast();
                 PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-                playerHealth.PlayerDamage(1);
+                playerHealth.PlayerDamage(2);
                 Debug.Log("Scholler");
             }
             else
@@ -24,11 +24,11 @@ public class SchollerKill : MonoBehaviour
                     hitEffect.transform.position = gameObject.transform.position;
                     hitEffect.SetActive(true);
                 }
-                BlastoHealth enemy = GetComponent<BlastoHealth>();
+                /*BlastoHealth enemy = GetComponent<BlastoHealth>();
                 if (enemy != null)
                 {
                     enemy.TakeDamage(3);
-                }
+                }*/
                 
             }
         }        

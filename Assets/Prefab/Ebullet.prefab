@@ -183,4 +183,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a62bebdb4b4d064b9958cbfd5c6570d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ebullet
-  speed: 10
+  speed: 20

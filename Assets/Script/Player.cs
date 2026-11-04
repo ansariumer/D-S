@@ -107,6 +107,19 @@ public class Player : MonoBehaviour
                 enemy.TakeDamage(3);
             }
         }
+
+        if (collision.gameObject.CompareTag("Scholler"))
+        {
+            if(!isDashing)
+            {
+                return;
+            }
+            else
+            {
+                SchollerHealth enemy = collision.gameObject.GetComponent<SchollerHealth>();
+                enemy.TakeDamage(1.5f);
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
