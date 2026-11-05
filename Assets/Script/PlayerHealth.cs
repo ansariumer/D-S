@@ -11,10 +11,14 @@ public class PlayerHealth : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
-
     public GameOver gameOver;
-
     public CameraShake camShake;
+    public ShakeHealthBar shakeHealthBar;
+
+    public GameObject damageNumber;
+    public Transform numbSpawnPoint;
+
+    public ParticleSystem damageEffect;
 
     void Awake()
     {
@@ -28,7 +32,28 @@ public class PlayerHealth : MonoBehaviour
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
 
-        camShake.ShakeCamera();
+        if (damageNumber != null && numbSpawnPoint != null)
+        {
+            GameObject numObj = Instantiate(damageNumber, numbSpawnPoint.position, Quaternion.identity);
+            DamageNumber fn = numObj.GetComponent<DamageNumber>();
+            if (fn != null)
+            {
+                fn.SetDamage(damage);
+            }
+        }
+        else
+        {
+            Debug.LogError("The DamageNumber script is missing from the spawned prefab!");
+        }
+        
+        damageEffect.Play(); //partical
+
+        camShake.ShakeCamera(); // camera shake
+
+        if(damage > 1)
+        {
+            shakeHealthBar.shakeHealth(); // health bar shake
+        }
 
         if (health <= 0)
         {
