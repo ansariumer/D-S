@@ -110,7 +110,6 @@ struct Expression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785;
 struct Font_tC95270EA3198038970422D78B74A7F2E218A96B6;
 struct GCHandlePool_tD3D33D37D8C147B41AAB365A95FF06822785A768;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
-struct GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D;
 struct Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E;
 struct HDROutputSettings_t6A590B1AA325DD7389D71F502B762BF1592A9F62;
 struct Hierarchy_t6C500307C045A73F46DA5BBF9EF6F56DB365B04E;
@@ -5566,7 +5565,6 @@ struct PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263  : public MonoBeha
 	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___slider;
 	Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___gradient;
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___fill;
-	GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D* ___gameOver;
 	CameraShake_tAC55122F42E0B2A0581731E4C9799A5A8A0D7CA1* ___camShake;
 	ShakeHealthBar_t832036EAD77F34491DAB8AC98E84C6DF799EB8D4* ___shakeHealthBar;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___damageNumber;
@@ -6910,9 +6908,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9388[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9389[15] = 
 {
 	static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___joystickMove)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___bulletCounter)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___speed)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dash)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dashTime)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___isDashing)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___rb)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___moveInput)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___dashVelocity)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___originalScale)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___targetScale)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___smoothspeed)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___trail)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___FadeOutTime)),static_cast<int32_t>(offsetof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74, ___cameraZoom)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9390[10] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9390[9] = 
 {
-	static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___health)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___slider)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___gradient)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___fill)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___gameOver)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___camShake)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___shakeHealthBar)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___damageNumber)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___numbSpawnPoint)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___damageEffect)),};
+	static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___health)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___slider)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___gradient)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___fill)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___camShake)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___shakeHealthBar)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___damageNumber)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___numbSpawnPoint)),static_cast<int32_t>(offsetof(PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263, ___damageEffect)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9391[4] = 
 {
 	static_cast<int32_t>(offsetof(ShakeHealthBar_t832036EAD77F34491DAB8AC98E84C6DF799EB8D4, ___rectTransform)),static_cast<int32_t>(offsetof(ShakeHealthBar_t832036EAD77F34491DAB8AC98E84C6DF799EB8D4, ___originalAnchoredPos)),static_cast<int32_t>(offsetof(ShakeHealthBar_t832036EAD77F34491DAB8AC98E84C6DF799EB8D4, ___shakeMagnitude)),static_cast<int32_t>(offsetof(ShakeHealthBar_t832036EAD77F34491DAB8AC98E84C6DF799EB8D4, ___shakeDuration)),};

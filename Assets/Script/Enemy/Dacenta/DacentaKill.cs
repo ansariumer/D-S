@@ -14,7 +14,7 @@ public class DacentaKill : MonoBehaviour
             {
                 Blast();
                 PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-                playerHealth.PlayerDamage(2); 
+                playerHealth.PlayerDamage(20); 
             }
             else
             {

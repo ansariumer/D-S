@@ -17,7 +17,7 @@ public class Ebullet : MonoBehaviour
         {
             Blast();
             PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-            playerHealth.PlayerDamage(1);
+            playerHealth.PlayerDamage(20);
             Debug.Log("Scholler Bullet");
         }
     } 

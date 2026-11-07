@@ -253,5 +253,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageNumber
   speed: 600
-  lifeTime: 0.4
+  lifeTime: 0.6
   textMesh: {fileID: 7682506387904564002}

@@ -202,6 +202,7 @@ IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B35
 IL2CPP_EXTERN_C RuntimeClass* bulletPooling_tA7C6922F5796B2BE1B9FECA82DF6D6268747E94C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____293A786CB042CA0F555AB2018068BDAFFA399550320FA107750F4F85EF3A1A1E_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6AB4BB9AB1731D8176F23A2001984805D6001899A21AAB37704541BF17E8FC96_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral08EF1409295A748F17C961491378A3B6215AA838;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C3D4826D5236B3C9A914C5CE2E3D8CEA48AC7CE;
 IL2CPP_EXTERN_C String_t* _stringLiteral35378C8E27B90ED94E10BAA11257F47CA51BFD57;
 IL2CPP_EXTERN_C String_t* _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0;
@@ -1839,7 +1840,6 @@ struct PlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263  : public MonoBeha
 	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___slider;
 	Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E* ___gradient;
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___fill;
-	GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D* ___gameOver;
 	CameraShake_tAC55122F42E0B2A0581731E4C9799A5A8A0D7CA1* ___camShake;
 	ShakeHealthBar_t832036EAD77F34491DAB8AC98E84C6DF799EB8D4* ___shakeHealthBar;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___damageNumber;
@@ -2703,7 +2703,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraShake_ShakeCamera_mAE599A80018A4332EE89E4C25B0141D098320DC7 (CameraShake_tAC55122F42E0B2A0581731E4C9799A5A8A0D7CA1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShakeHealthBar_shakeHealth_m6C2F3DAE10E3D70EEDFAA7AFB9D84EEF741E7136 (ShakeHealthBar_t832036EAD77F34491DAB8AC98E84C6DF799EB8D4* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameOver_GameOverP_mB87CB6F1F3DEB9B0AF3232DED04277267E7FA971 (GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D* __this, const RuntimeMethod* method) ;
 inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
 	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
@@ -4030,7 +4029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlastoKill_OnCollisionEnter2D_m54462D3E6
 		L_2 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_1, _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70, NULL);
 		if (!L_2)
 		{
-			goto IL_0096;
+			goto IL_0097;
 		}
 	}
 	{
@@ -4047,7 +4046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlastoKill_OnCollisionEnter2D_m54462D3E6
 		bool L_6 = L_5->___isDashing;
 		if (L_6)
 		{
-			goto IL_0049;
+			goto IL_004a;
 		}
 	}
 	{
@@ -4063,14 +4062,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlastoKill_OnCollisionEnter2D_m54462D3E6
 		L_9 = GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE(L_8, GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE_RuntimeMethod_var);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Blasto/BlastoKill.cs:17>
 		NullCheck(L_9);
-		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_9, 1, NULL);
+		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_9, ((int32_t)10), NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Blasto/BlastoKill.cs:18>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralC5925E1F9DBF75437265172344970E8073363F9F, NULL);
 		return;
 	}
 
-IL_0049:
+IL_004a:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Blasto/BlastoKill.cs:22>
 		BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D* L_10 = ((BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_StaticFields*)il2cpp_codegen_static_fields_for(BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_il2cpp_TypeInfo_var))->___instance;
@@ -4085,7 +4084,7 @@ IL_0049:
 		L_13 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_12, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_13)
 		{
-			goto IL_007f;
+			goto IL_0080;
 		}
 	}
 	{
@@ -4110,7 +4109,7 @@ IL_0049:
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
 	}
 
-IL_007f:
+IL_0080:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Blasto/BlastoKill.cs:29>
 		BlastoHealth_t5568441A75B875C3CF22DB09224405A7327EBDD1* L_20;
@@ -4123,7 +4122,7 @@ IL_007f:
 		L_22 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_21, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_22)
 		{
-			goto IL_0096;
+			goto IL_0097;
 		}
 	}
 	{
@@ -4133,7 +4132,7 @@ IL_007f:
 		BlastoHealth_TakeDamage_m1DB35BAE9C09A5A15627A00C922DD08E371496CA(L_23, 3, NULL);
 	}
 
-IL_0096:
+IL_0097:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Blasto/BlastoKill.cs:37>
 		return;
@@ -4560,7 +4559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DacentaKill_OnCollisionEnter2D_m4075D175
 		L_2 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_1, _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70, NULL);
 		if (!L_2)
 		{
-			goto IL_0089;
+			goto IL_008a;
 		}
 	}
 	{
@@ -4577,7 +4576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DacentaKill_OnCollisionEnter2D_m4075D175
 		bool L_6 = L_5->___isDashing;
 		if (L_6)
 		{
-			goto IL_003c;
+			goto IL_003d;
 		}
 	}
 	{
@@ -4593,11 +4592,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DacentaKill_OnCollisionEnter2D_m4075D175
 		L_9 = GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE(L_8, GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE_RuntimeMethod_var);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Dacenta/DacentaKill.cs:17>
 		NullCheck(L_9);
-		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_9, 2, NULL);
+		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_9, ((int32_t)20), NULL);
 		return;
 	}
 
-IL_003c:
+IL_003d:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Dacenta/DacentaKill.cs:21>
 		BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D* L_10 = ((BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_StaticFields*)il2cpp_codegen_static_fields_for(BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_il2cpp_TypeInfo_var))->___instance;
@@ -4612,7 +4611,7 @@ IL_003c:
 		L_13 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_12, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_13)
 		{
-			goto IL_0072;
+			goto IL_0073;
 		}
 	}
 	{
@@ -4637,7 +4636,7 @@ IL_003c:
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
 	}
 
-IL_0072:
+IL_0073:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Dacenta/DacentaKill.cs:28>
 		DacentaHealth_t040E9417ECC65874880BFF78B604D1CE2019608E* L_20;
@@ -4650,7 +4649,7 @@ IL_0072:
 		L_22 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_21, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_22)
 		{
-			goto IL_0089;
+			goto IL_008a;
 		}
 	}
 	{
@@ -4660,7 +4659,7 @@ IL_0072:
 		DacentaHealth_TakeDamage_m3581D12B116B723BAEF1A4D302AA1E942B272243(L_23, 3, NULL);
 	}
 
-IL_0089:
+IL_008a:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Dacenta/DacentaKill.cs:35>
 		return;
@@ -5608,7 +5607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ebullet_OnTriggerEnter2D_mCD4666E145DF4B
 		L_1 = Component_CompareTag_mE6F8897E84F12DF12D302FFC4D58204D51096FC5(L_0, _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70, NULL);
 		if (!L_1)
 		{
-			goto IL_002e;
+			goto IL_002f;
 		}
 	}
 	{
@@ -5624,13 +5623,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ebullet_OnTriggerEnter2D_mCD4666E145DF4B
 		L_4 = GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE(L_3, GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE_RuntimeMethod_var);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Scholler/Ebullet.cs:20>
 		NullCheck(L_4);
-		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_4, 1, NULL);
+		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_4, ((int32_t)20), NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Scholler/Ebullet.cs:21>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralCCC1BD971F4BCA220D90D6C397D81DE60C015437, NULL);
 	}
 
-IL_002e:
+IL_002f:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Scholler/Ebullet.cs:23>
 		return;
@@ -5998,7 +5997,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SchollerKill_OnCollisionEnter2D_m29AB5BE
 		L_2 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_1, _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70, NULL);
 		if (!L_2)
 		{
-			goto IL_007c;
+			goto IL_007d;
 		}
 	}
 	{
@@ -6015,7 +6014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SchollerKill_OnCollisionEnter2D_m29AB5BE
 		bool L_6 = L_5->___isDashing;
 		if (L_6)
 		{
-			goto IL_0046;
+			goto IL_0047;
 		}
 	}
 	{
@@ -6031,14 +6030,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SchollerKill_OnCollisionEnter2D_m29AB5BE
 		L_9 = GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE(L_8, GameObject_GetComponent_TisPlayerHealth_tE7421738BA48E6A6C90760303B818641DDFAE263_m6F1B0F3241CD8D5B608D3B142C00A3331677B1FE_RuntimeMethod_var);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Scholler/SchollerKill.cs:15>
 		NullCheck(L_9);
-		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_9, 2, NULL);
+		PlayerHealth_PlayerDamage_mAA40EA0C0E14E157A6BFCFF2DC91AC6649CDE89E(L_9, ((int32_t)30), NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Scholler/SchollerKill.cs:16>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral35378C8E27B90ED94E10BAA11257F47CA51BFD57, NULL);
 		return;
 	}
 
-IL_0046:
+IL_0047:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Scholler/SchollerKill.cs:20>
 		BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D* L_10 = ((BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_StaticFields*)il2cpp_codegen_static_fields_for(BulletParPooling_t7A4F1D312650436BC634386A09CFB2CB5317A10D_il2cpp_TypeInfo_var))->___instance;
@@ -6053,7 +6052,7 @@ IL_0046:
 		L_13 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_12, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_13)
 		{
-			goto IL_007c;
+			goto IL_007d;
 		}
 	}
 	{
@@ -6078,7 +6077,7 @@ IL_0046:
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
 	}
 
-IL_007c:
+IL_007d:
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/Enemy/Scholler/SchollerKill.cs:35>
 		return;
@@ -7876,6 +7875,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerHealth_PlayerDamage_mAA40EA0C0E14E
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisDamageNumber_tD4AEC1E7D070D3D5B2702877B7452E79FB610E7E_m9FE97095B0EFB2EBAB1203B6F341C34609572CD2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral08EF1409295A748F17C961491378A3B6215AA838);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5D3F050D9513851D3C6954D67387DDC98F1CE5E0);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -7994,24 +7994,23 @@ IL_00bf:
 		float L_27 = __this->___health;
 		if ((!(((float)L_27) <= ((float)(0.0f)))))
 		{
-			goto IL_00e2;
+			goto IL_00e1;
 		}
 	}
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/PlayerHealth.cs:60>
-		GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D* L_28 = __this->___gameOver;
-		NullCheck(L_28);
-		GameOver_GameOverP_mB87CB6F1F3DEB9B0AF3232DED04277267E7FA971(L_28, NULL);
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/PlayerHealth.cs:61>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29;
-		L_29 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28;
+		L_28 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_29, NULL);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_28, NULL);
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/PlayerHealth.cs:62>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral08EF1409295A748F17C961491378A3B6215AA838, NULL);
 	}
 
-IL_00e2:
+IL_00e1:
 	{
-		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/PlayerHealth.cs:63>
+		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/PlayerHealth.cs:64>
 		return;
 	}
 }
@@ -8020,7 +8019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerHealth__ctor_m6A07958FCBF285AA65AB
 {
 	{
 		//<source_info:C:/Users/Umer/Games/D&S/Assets/Script/PlayerHealth.cs:9>
-		__this->___health = (3.0f);
+		__this->___health = (100.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}

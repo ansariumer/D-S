@@ -14,7 +14,7 @@ public class BlastoKill : MonoBehaviour
             {
                 Blast();
                 PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-                playerHealth.PlayerDamage(1);
+                playerHealth.PlayerDamage(10);
                 Debug.Log("Blasto");
             }
             else

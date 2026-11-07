@@ -12,7 +12,7 @@ public class SchollerKill : MonoBehaviour
             {
                 Blast();
                 PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-                playerHealth.PlayerDamage(2);
+                playerHealth.PlayerDamage(30);
                 Debug.Log("Scholler");
             }
             else

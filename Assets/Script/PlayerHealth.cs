@@ -6,12 +6,12 @@ using System.Collections.Generic;
 public class PlayerHealth : MonoBehaviour
 {
     //[SerializeField]
-    public float health = 3f;
+    public float health = 100f;
 
     public Slider slider;
     public Gradient gradient;
     public Image fill;
-    public GameOver gameOver;
+    //public GameOver gameOver;
     public CameraShake camShake;
     public ShakeHealthBar shakeHealthBar;
 
@@ -57,8 +57,9 @@ public class PlayerHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            gameOver.GameOverP();
+            //gameOver.GameOverP();
             Destroy(gameObject);
+            Debug.Log("Die");
         }
     }
 }
