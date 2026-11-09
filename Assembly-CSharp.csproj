@@ -58,6 +58,7 @@
     <Compile Include="Assets\Script\CameraZoom.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoMovement.cs" />
     <Compile Include="Assets\Script\WarningBlink.cs" />
+    <Compile Include="Assets\Script\ComboCounter.cs" />
     <Compile Include="Assets\Script\dashButton.cs" />
     <Compile Include="Assets\Script\CameraShake.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoHealth.cs" />

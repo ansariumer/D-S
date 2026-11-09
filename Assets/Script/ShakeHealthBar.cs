@@ -21,8 +21,8 @@ public class ShakeHealthBar : MonoBehaviour
 
     public void shakeHealth()
     {
-        shakeMagnitude = 30f;
-        shakeDuration = 5f;
+        shakeMagnitude = 15f;
+        shakeDuration = 3f;
     }
     void Update()
     {
