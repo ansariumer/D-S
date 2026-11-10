@@ -11,17 +11,19 @@ public class ComboCounter : MonoBehaviour
     public GameObject Scholler;
 
     public PlayerHealth playerHealht;
-    //public Image comboCounter;
+    public GameObject ComboParent;
+    public ComboBar comboBar;
     private float timer = 8f;
     //private bool enemyKilled = false;
 
     private int enemyKilledCount = 0;
+    private Coroutine myCoroutineRef; // for avoiding another coroutine to run
 
-    /*void Awake()
+    void Awake()
     {
-        //comboCounter.SetActive(false);
-        enemyKilled = false;
-    }*/
+        ComboParent.SetActive(false);
+        //enemyKilled = false;
+    }
 
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -29,7 +31,12 @@ public class ComboCounter : MonoBehaviour
         {
             enemyKilledCount++;
             //enemyKilled = true;
-            StartCoroutine(CountDown());
+            if (myCoroutineRef != null)
+            {
+                Debug.Log("Timer already running");
+                return;
+            }
+            myCoroutineRef = StartCoroutine(CountDown());
         }
     }
 
@@ -41,7 +48,11 @@ public class ComboCounter : MonoBehaviour
         {
             if (enemyKilledCount >= 3)
             {
-                Debug.Log("Rest CC");
+                Debug.Log("Combo Bar Appear!!");
+                ComboParent.SetActive(true);
+                comboBar.ComboStart();
+                //comboBar.ResetFill();
+                myCoroutineRef = null;
                 yield break;
             }
 
@@ -49,7 +60,9 @@ public class ComboCounter : MonoBehaviour
             yield return new WaitForSeconds(1f);
             timer--;
         }
+        enemyKilledCount = 0;
         Debug.Log("No Combo");
-        yield break;
+        
+        myCoroutineRef = null;
     }
 }
