@@ -5,10 +5,11 @@ public class Bullet : MonoBehaviour
      public GameObject bullet;
      public ParticleSystem bulletParticle;
      [SerializeField] private float speed = 10f;
+     [SerializeField] private Rigidbody2D rb;
 
-     void Update()
+     void FixedUpdate()
      {
-          transform.position += transform.up * speed * Time.deltaTime;
+          rb.linearVelocity = transform.up * speed;
      } 
 
      private void OnTriggerEnter2D(Collider2D other)
@@ -16,6 +17,14 @@ public class Bullet : MonoBehaviour
           if (other.CompareTag("Finish"))
           {
                gameObject.SetActive(false);
+
+                GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
+
+               if (hitEffect != null)
+               {
+                    hitEffect.transform.position = bullet.transform.position;
+                    hitEffect.SetActive(true);
+               }
           }
 
           else if (other.CompareTag("Blasto"))

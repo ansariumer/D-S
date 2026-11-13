@@ -14,7 +14,6 @@ public class ComboCounter : MonoBehaviour
     public GameObject ComboParent;
     public ComboBar comboBar;
     private float timer = 8f;
-    //private bool enemyKilled = false;
 
     private int enemyKilledCount = 0;
     private Coroutine myCoroutineRef; // for avoiding another coroutine to run
@@ -22,7 +21,12 @@ public class ComboCounter : MonoBehaviour
     void Awake()
     {
         ComboParent.SetActive(false);
-        //enemyKilled = false;
+    }
+
+    public void DisappearBar()
+    {
+        Debug.Log("Bar disappear");
+        StartCoroutine(Delay(.2f));
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -30,7 +34,17 @@ public class ComboCounter : MonoBehaviour
         if (other.gameObject.CompareTag("Blasto") && playerHealht.health >= 100)
         {
             enemyKilledCount++;
-            //enemyKilled = true;
+
+            if (enemyKilledCount >= 3) // Under this Bar will appear
+            {
+                Debug.Log("Combo Bar Appear!!");
+                ComboParent.SetActive(true);
+                comboBar.ComboStart();
+                //comboBar.ResetFill();
+                myCoroutineRef = null;
+                //yield break;
+            }
+
             if (myCoroutineRef != null)
             {
                 Debug.Log("Timer already running");
@@ -40,29 +54,38 @@ public class ComboCounter : MonoBehaviour
         }
     }
 
-    IEnumerator CountDown()
+    IEnumerator CountDown() // 8 sec countdown that start when a player kills an enemy 
     {
         timer = 8f;
 
         while(timer > 0)
         {
-            if (enemyKilledCount >= 3)
+            /*if (enemyKilledCount >= 3) // Under this Bar will appear
             {
                 Debug.Log("Combo Bar Appear!!");
                 ComboParent.SetActive(true);
                 comboBar.ComboStart();
                 //comboBar.ResetFill();
                 myCoroutineRef = null;
-                yield break;
-            }
-
+                //yield break;
+            }*/
+            Debug.Log("Killed" + enemyKilledCount);
             Debug.Log(timer);
             yield return new WaitForSeconds(1f);
             timer--;
         }
+
         enemyKilledCount = 0;
+        Debug.Log("Killed" + enemyKilledCount);
+        
         Debug.Log("No Combo");
         
         myCoroutineRef = null;
+    }
+
+    IEnumerator Delay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        ComboParent.SetActive(false);
     }
 }

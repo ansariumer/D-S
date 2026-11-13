@@ -9,6 +9,7 @@ public class ComboBar : MonoBehaviour
     public Image fill;
     private float time = 4f;
     private Coroutine fillCoroutine;
+    public ComboCounter comboCounter;
 
     void Awake()
     {
@@ -49,7 +50,13 @@ public class ComboBar : MonoBehaviour
             slider.value = time;
             yield return null;
         }
+        
         fillCoroutine = null;
-        Debug.Log("Disappera");
+
+        if (slider.value <= 0)
+        {
+            comboCounter.DisappearBar();
+        }
+        Debug.Log("Disapper");
     }
 }
