@@ -3,6 +3,7 @@ using UnityEngine;
 public class BlastoKill : MonoBehaviour
 {
     //public Player player;
+    public ParticleSystem dieEffect;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,16 +17,17 @@ public class BlastoKill : MonoBehaviour
                 PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
                 playerHealth.PlayerDamage(10);
                 Debug.Log("Blasto");
+                //Debug.Log("Now Play");
             }
             else
             {
-                GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
+                /*GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
                 
                 if (hitEffect != null)
                 {
                     hitEffect.transform.position = gameObject.transform.position;
                     hitEffect.SetActive(true);
-                }
+                }*/
                 BlastoHealth enemy = GetComponent<BlastoHealth>();
                 if (enemy != null)
                 {

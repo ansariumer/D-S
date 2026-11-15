@@ -11,6 +11,9 @@ public class shootButton : MonoBehaviour
 
     float nextShootTime;
 
+    public Animator _muzzleFlashAnimator;
+    //public Bullet Bullet; //Bullet CS
+
     public void Shoot()
     {
         if (reloadBtn.isReloading)
@@ -26,6 +29,9 @@ public class shootButton : MonoBehaviour
         else if(Time.time >= nextShootTime)
         {
             nextShootTime = Time.time + firerate;
+
+            _muzzleFlashAnimator.SetTrigger(name:"Shoot");
+
             //Instantiate(bullet, firePoint.position, firePoint.rotation);
             GameObject bullet = bulletPooling.instance.GetPoolObject();
             bulletCounter.SubtractBullet();

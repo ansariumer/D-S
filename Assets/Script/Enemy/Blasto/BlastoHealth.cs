@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class BlastoHealth : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class BlastoHealth : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
+
+    public ParticleSystem dieEffect;
 
     void Awake()
     {
@@ -28,7 +32,11 @@ public class BlastoHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            blastoKill.Blast();
+            //blastoKill.Blast();
+            Debug.Log("Nowwwww!!!");
+            dieEffect.Play();
+            //I1nstantiate(dieEffect, transform.position, Quaternion.identity);
+            //Destroy(gameObject);
         }
     }
 }

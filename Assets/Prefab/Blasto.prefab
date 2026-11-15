@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6619809938913219042
 Transform:
   m_ObjectHideFlags: 0
@@ -542,6 +542,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 7603273233287356691}
+  dieEffect: {fileID: 7610519728760920146, guid: 378e59fc08a1d3444961bda0e76bd102, type: 3}
 --- !u!114 &4860663468216376446
 MonoBehaviour:
   m_ObjectHideFlags: 0

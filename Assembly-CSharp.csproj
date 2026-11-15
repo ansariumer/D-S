@@ -52,6 +52,7 @@
     <Compile Include="Assets\Script\Enemy\Dacenta\DashDetection.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\Enemy\Scholler\SchollerKill.cs" />
+    <Compile Include="Assets\Script\ParticleTest.cs" />
     <Compile Include="Assets\Script\Enemy\Scholler\SchollerHealth.cs" />
     <Compile Include="Assets\Script\Enemy\Scholler\SchollerMovement.cs" />
     <Compile Include="Assets\Script\Enemy\Scholler\SchollerShoot.cs" />

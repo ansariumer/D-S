@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
      [SerializeField] private float speed = 10f;
      [SerializeField] private Rigidbody2D rb;
 
+     public ParticleSystem dieEffect;
+
      void FixedUpdate()
      {
           rb.linearVelocity = transform.up * speed;
@@ -18,13 +20,14 @@ public class Bullet : MonoBehaviour
           {
                gameObject.SetActive(false);
 
-                GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
+                /*GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
 
                if (hitEffect != null)
                {
                     hitEffect.transform.position = bullet.transform.position;
                     hitEffect.SetActive(true);
-               }
+               }*/
+               dieEffect.Play();
           }
 
           else if (other.CompareTag("Blasto"))
