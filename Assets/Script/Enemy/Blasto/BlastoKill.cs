@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class BlastoKill : MonoBehaviour
 {
-    //public Player player;
-    public ParticleSystem dieEffect;
+    
+    //public BlastoHealth blastoHealth;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -13,7 +13,11 @@ public class BlastoKill : MonoBehaviour
 
             if(player.isDashing == false)
             {
-                Blast();
+                //Blast();
+                BlastoHealth blastoHealth = GetComponent<BlastoHealth>();
+                Destroy(gameObject);
+                blastoHealth.Play();
+
                 PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
                 playerHealth.PlayerDamage(10);
                 Debug.Log("Blasto");
@@ -35,7 +39,31 @@ public class BlastoKill : MonoBehaviour
                 }
                 
             }
-        }        
+        }   
+        else if (collision.gameObject.CompareTag("Dacenta"))
+        {
+            BlastoHealth enemy = GetComponent<BlastoHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }     
+        else if (collision.gameObject.CompareTag("Scholler"))
+        {
+            BlastoHealth enemy = GetComponent<BlastoHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Blasto"))
+        {
+            BlastoHealth enemy = GetComponent<BlastoHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }
     }
 
     public void Blast()

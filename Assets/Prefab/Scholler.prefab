@@ -994,6 +994,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 2738664538055582853}
+  dieEffect: {fileID: 7610519728760920146, guid: 378e59fc08a1d3444961bda0e76bd102, type: 3}
 --- !u!114 &4239066918255873151
 MonoBehaviour:
   m_ObjectHideFlags: 0

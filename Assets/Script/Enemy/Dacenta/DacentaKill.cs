@@ -12,7 +12,10 @@ public class DacentaKill : MonoBehaviour
 
             if(player.isDashing == false)
             {
-                Blast();
+                //Blast();
+                DacentaHealth dacentaHealth = GetComponent<DacentaHealth>();
+                Destroy(gameObject);
+                dacentaHealth.Play();
                 PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
                 playerHealth.PlayerDamage(20); 
             }
@@ -32,9 +35,33 @@ public class DacentaKill : MonoBehaviour
                 }   
             }
         }
+        else if (collision.gameObject.CompareTag("Blasto"))
+        {
+            DacentaHealth enemy = GetComponent<DacentaHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }     
+        else if (collision.gameObject.CompareTag("Scholler"))
+        {
+            DacentaHealth enemy = GetComponent<DacentaHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Dacenta"))
+        {
+            DacentaHealth enemy = GetComponent<DacentaHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }    
     }
 
-        public void Blast()
+    public void Blast()
     {
         GameObject hitEffect = BulletParPooling.instance.GetPoolObject();
 

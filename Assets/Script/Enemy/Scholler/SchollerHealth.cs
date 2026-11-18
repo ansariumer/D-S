@@ -12,6 +12,8 @@ public class SchollerHealth : MonoBehaviour
     public Gradient gradient; // will create a gradint bar
     public Image fill;
 
+    public ParticleSystem dieEffect;
+
     void Awake()
     {
         currentHealth = maxHealth;
@@ -29,7 +31,16 @@ public class SchollerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            schollerKill.Blast();
+            //schollerKill.Blast();
+            Destroy(gameObject);
+            Play();
+            Debug.Log("It Should Play");
         }
+    }
+
+    public void Play()
+    {
+        Instantiate(dieEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

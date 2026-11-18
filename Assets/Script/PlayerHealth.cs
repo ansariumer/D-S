@@ -18,19 +18,24 @@ public class PlayerHealth : MonoBehaviour
     public GameObject damageNumber;
     public Transform numbSpawnPoint;
 
-    public ParticleSystem damageEffect;
+    public ParticleSystem healthReduce;
+    public DamageEffect damageEffect;
 
     void Awake()
     {
         slider.maxValue = health;
         slider.value = health;
         fill.color = gradient.Evaluate(1f);
+
+        //damageEffect = GetComponent<DamageEffect>();
     }
     public void PlayerDamage(int damage)
     {
         health -= damage;
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
+
+
 
         if (damageNumber != null && numbSpawnPoint != null)
         {
@@ -46,7 +51,8 @@ public class PlayerHealth : MonoBehaviour
             Debug.LogError("The DamageNumber script is missing from the spawned prefab!");
         }
         
-        damageEffect.Play(); //partical
+        healthReduce.Play(); //partical
+        damageEffect.Blink();
 
         camShake.ShakeCamera(); // camera shake
 

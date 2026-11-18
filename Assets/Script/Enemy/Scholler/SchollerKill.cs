@@ -10,7 +10,10 @@ public class SchollerKill : MonoBehaviour
 
             if(player.isDashing == false)
             {
-                Blast();
+               // Blast();
+                SchollerHealth schollerHealth = GetComponent<SchollerHealth>();
+                schollerHealth.Play();
+                Destroy(gameObject);
                 PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
                 playerHealth.PlayerDamage(30);
                 Debug.Log("Scholler");
@@ -31,7 +34,31 @@ public class SchollerKill : MonoBehaviour
                 }*/
                 
             }
-        }        
+        }    
+        else if (collision.gameObject.CompareTag("Blasto"))
+        {
+            SchollerHealth enemy = GetComponent<SchollerHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }     
+        else if (collision.gameObject.CompareTag("Dacenta"))
+        {
+            SchollerHealth enemy = GetComponent<SchollerHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Scholler"))
+        {
+            SchollerHealth enemy = GetComponent<SchollerHealth>();
+            if (enemy != null)
+            { 
+                enemy.TakeDamage(3);
+            }
+        }    
     }
 
     public void Blast()

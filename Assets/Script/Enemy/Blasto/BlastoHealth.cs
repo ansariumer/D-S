@@ -34,9 +34,14 @@ public class BlastoHealth : MonoBehaviour
         {
             //blastoKill.Blast();
             Debug.Log("Nowwwww!!!");
-            dieEffect.Play();
-            //I1nstantiate(dieEffect, transform.position, Quaternion.identity);
-            //Destroy(gameObject);
+            Play();
+            Destroy(gameObject);
         }
+    }
+
+    public void Play()
+    {
+        Instantiate(dieEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

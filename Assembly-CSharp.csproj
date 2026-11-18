@@ -86,6 +86,7 @@
     <Compile Include="Assets\Script\Enemy\Scholler\S_DashDetection.cs" />
     <Compile Include="Assets\Script\AimController.cs" />
     <Compile Include="Assets\Script\PauseMenu.cs" />
+    <Compile Include="Assets\Script\DamageEffect.cs" />
     <Compile Include="Assets\Script\StartMenu.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoDetection.cs" />
     <Compile Include="Assets\Script\ComboBar.cs" />

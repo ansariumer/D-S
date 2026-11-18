@@ -5,11 +5,6 @@ using System.Collections.Generic;
 
 public class ComboCounter : MonoBehaviour
 {
-    [Header("Enemies")]
-    public GameObject Blasto;
-    public GameObject Dacenta;
-    public GameObject Scholler;
-
     public PlayerHealth playerHealht;
     public GameObject ComboParent;
     public ComboBar comboBar;

@@ -67,6 +67,7 @@ extern void BlastoDetection_OnTriggerExit2D_m5082965B1166DF8A3A31E81005F85663CDC
 extern void BlastoDetection__ctor_mCC9F44D57942A092C802788C048508D9B6775008 (void);
 extern void BlastoHealth_Awake_m86BF04DAA436D74ADBA6FF7D3561A0990DD972DA (void);
 extern void BlastoHealth_TakeDamage_m1DB35BAE9C09A5A15627A00C922DD08E371496CA (void);
+extern void BlastoHealth_Play_m6C44E866B8B1C06941747716BB072E28D750AC4F (void);
 extern void BlastoHealth__ctor_m0A179CD330528A8184A12E2DA5CA3A99A64BAD31 (void);
 extern void BlastoKill_OnCollisionEnter2D_m54462D3E6168AE3E973975F9B5A76423FD7A323B (void);
 extern void BlastoKill_Blast_mE1766A532A7CA04E58F5EBDA4246514F7151CE34 (void);
@@ -162,6 +163,8 @@ extern void JoystickController_OnPointerDown_m282DC1E76B760E59F515718B420E49EF23
 extern void JoystickController_OnDrag_m58D994671580818B22603FD436BF3446CC332F4D (void);
 extern void JoystickController_OnPointerUp_mF72BB2EF67C2A6A0B6CE9D6E0C6E34B9B07E9854 (void);
 extern void JoystickController__ctor_mD47A803DD7AD117F73E1275CD8BF1402B659DAF0 (void);
+extern void ParticleTest_Update_m964B235AD76C20D45AABA8761D76520FAAD64281 (void);
+extern void ParticleTest__ctor_m7E172C09853AF13433392B39E2C94CC9E6D52D5A (void);
 extern void PauseMenu_Start_m4BBF1E67B42A2E936C792E83778ADCD87DE3C80E (void);
 extern void PauseMenu_OpenPauseMenu_m0E0CC7533A8CBC96C8834E9C76C3E706466E496D (void);
 extern void PauseMenu_ClosePauseMenu_m3219C11348E15C30E63C2F6CEC824ECED86A3529 (void);
@@ -216,7 +219,7 @@ extern void shootButton_Shoot_mCF3235563EB1A78319AE4644692D5C6365293CE9 (void);
 extern void shootButton__ctor_mBE7129B0A2C7BC3036F993DAB6404795AA98CE3C (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[209] = 
+static Il2CppMethodPointer s_methodPointers[212] = 
 {
 	AimController_Update_mF85209392F914800B41E0E458533FFA2CD268D04,
 	AimController__ctor_m09202B7BADA38CA75587D3D80FFBD93B1A65C490,
@@ -278,6 +281,7 @@ static Il2CppMethodPointer s_methodPointers[209] =
 	BlastoDetection__ctor_mCC9F44D57942A092C802788C048508D9B6775008,
 	BlastoHealth_Awake_m86BF04DAA436D74ADBA6FF7D3561A0990DD972DA,
 	BlastoHealth_TakeDamage_m1DB35BAE9C09A5A15627A00C922DD08E371496CA,
+	BlastoHealth_Play_m6C44E866B8B1C06941747716BB072E28D750AC4F,
 	BlastoHealth__ctor_m0A179CD330528A8184A12E2DA5CA3A99A64BAD31,
 	BlastoKill_OnCollisionEnter2D_m54462D3E6168AE3E973975F9B5A76423FD7A323B,
 	BlastoKill_Blast_mE1766A532A7CA04E58F5EBDA4246514F7151CE34,
@@ -373,6 +377,8 @@ static Il2CppMethodPointer s_methodPointers[209] =
 	JoystickController_OnDrag_m58D994671580818B22603FD436BF3446CC332F4D,
 	JoystickController_OnPointerUp_mF72BB2EF67C2A6A0B6CE9D6E0C6E34B9B07E9854,
 	JoystickController__ctor_mD47A803DD7AD117F73E1275CD8BF1402B659DAF0,
+	ParticleTest_Update_m964B235AD76C20D45AABA8761D76520FAAD64281,
+	ParticleTest__ctor_m7E172C09853AF13433392B39E2C94CC9E6D52D5A,
 	PauseMenu_Start_m4BBF1E67B42A2E936C792E83778ADCD87DE3C80E,
 	PauseMenu_OpenPauseMenu_m0E0CC7533A8CBC96C8834E9C76C3E706466E496D,
 	PauseMenu_ClosePauseMenu_m3219C11348E15C30E63C2F6CEC824ECED86A3529,
@@ -428,7 +434,7 @@ static Il2CppMethodPointer s_methodPointers[209] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[209] = 
+static const int32_t s_InvokerIndices[212] = 
 {
 	16237,
 	16237,
@@ -490,6 +496,7 @@ static const int32_t s_InvokerIndices[209] =
 	16237,
 	16237,
 	12203,
+	16237,
 	16237,
 	12275,
 	16237,
@@ -588,6 +595,8 @@ static const int32_t s_InvokerIndices[209] =
 	16237,
 	16237,
 	16237,
+	16237,
+	16237,
 	12275,
 	16237,
 	16237,
@@ -644,7 +653,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	209,
+	212,
 	s_methodPointers,
 	0,
 	NULL,

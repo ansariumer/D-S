@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5126127272550235667
 Transform:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
   bulletParticle: {fileID: 8704061439229535015, guid: 7f695af0b2593574eb215fea53e905c4, type: 3}
   speed: 30
   rb: {fileID: 1962731604856964971}
-  dieEffect: {fileID: 7610519728760920146, guid: 378e59fc08a1d3444961bda0e76bd102, type: 3}
+  test: {fileID: 4816914960486339255, guid: e0159a5eb124d8a478f0bb0895dd2594, type: 3}
 --- !u!96 &5943122429681804210
 TrailRenderer:
   serializedVersion: 4

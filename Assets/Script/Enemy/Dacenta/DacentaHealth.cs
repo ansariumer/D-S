@@ -12,6 +12,8 @@ public class DacentaHealth : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
+    public ParticleSystem dieEffect;
+
     void Awake()
     {
         currentHealth = maxHealth;
@@ -28,7 +30,16 @@ public class DacentaHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            dacentaKill.Blast();
+           //dacentaKill.Blast();
+          
+            Destroy(gameObject);
+            Play();
         }
     }
+
+    public void Play()
+    {
+        Instantiate(dieEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    } 
 }

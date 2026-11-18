@@ -477,6 +477,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 499272820207747000}
+  dieEffect: {fileID: 7610519728760920146, guid: 378e59fc08a1d3444961bda0e76bd102, type: 3}
 --- !u!50 &-7083722808522745214
 Rigidbody2D:
   serializedVersion: 5
