@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
 
     public CameraZoom cameraZoom;
 
+    public ParticleSystem dashParticle; // Particle
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -66,6 +68,8 @@ public class Player : MonoBehaviour
 
         trail.time = dashTime;
         trail.emitting = true;
+
+        Play();
         
         Invoke(nameof(StopDash), dashTime);
     }
@@ -146,5 +150,12 @@ public class Player : MonoBehaviour
             }
 
         }
+    }
+
+    void Play()
+    {
+        ParticleSystem particle = Instantiate(dashParticle, transform.position, Quaternion.identity);
+        Destroy(particle.gameObject, particle.main.duration + particle.main.startLifetime.constantMax);
+        //The newly particle is distroyed after its duration
     }
 }

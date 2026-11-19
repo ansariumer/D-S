@@ -34,7 +34,6 @@ public class SchollerHealth : MonoBehaviour
             //schollerKill.Blast();
             Destroy(gameObject);
             Play();
-            Debug.Log("It Should Play");
         }
     }
 
