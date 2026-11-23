@@ -10,6 +10,7 @@ TagManager:
   - Scholler
   - Blasto
   - R
+  - HealthPoint
   layers:
   - Default
   - TransparentFX

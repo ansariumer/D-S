@@ -25,9 +25,11 @@ public class Player : MonoBehaviour
     public CameraZoom cameraZoom;
 
     public ParticleSystem dashParticle; // Particle
+    public PlayerHealth playerHealth; // Health CS
 
     void Awake()
     {
+        playerHealth = GetComponent<PlayerHealth>();
         rb = GetComponent<Rigidbody2D>();
         originalScale = transform.localScale;
 
@@ -124,6 +126,12 @@ public class Player : MonoBehaviour
                 enemy.TakeDamage(1.5f);
             }
         }
+        
+        if (collision.gameObject.CompareTag("HealthPoint"))
+        {
+            Debug.Log("Collected HealthPoint!!");
+            playerHealth.HealthIncrease();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -154,7 +162,11 @@ public class Player : MonoBehaviour
 
     void Play()
     {
+        Debug.Log("Dash Particle!!");
         ParticleSystem particle = Instantiate(dashParticle, transform.position, Quaternion.identity);
+
+        particle.Play();
+        
         Destroy(particle.gameObject, particle.main.duration + particle.main.startLifetime.constantMax);
         //The newly particle is distroyed after its duration
     }

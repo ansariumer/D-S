@@ -15,6 +15,7 @@ public class BlastoHealth : MonoBehaviour
     public Image fill;
 
     public ParticleSystem dieEffect;
+    public SpawnManager spawnManager;
 
     void Awake()
     {
@@ -33,7 +34,7 @@ public class BlastoHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             //blastoKill.Blast();
-            Debug.Log("Nowwwww!!!");
+            spawnManager.healthSpawn(transform.position); // spawns at this exact pos
             Play();
             Destroy(gameObject);
         }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class BlastoKill : MonoBehaviour
 {
     
-    //public BlastoHealth blastoHealth;
+    //public SpawnManager spawnManager;
 
     void OnCollisionEnter2D(Collision2D collision)
     {

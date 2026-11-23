@@ -68,4 +68,11 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Die");
         }
     }
+
+    public void HealthIncrease()
+    {
+        health += 20;
+        slider.value = health;
+        fill.color = gradient.Evaluate(slider.normalizedValue);
+    }
 }
