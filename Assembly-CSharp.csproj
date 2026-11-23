@@ -69,12 +69,12 @@
     <Compile Include="Assets\Script\Enemy\Dacenta\DacentaMovement.cs" />
     <Compile Include="Assets\Script\shootButton.cs" />
     <Compile Include="Assets\Script\HealthPoint.cs" />
+    <Compile Include="Assets\Script\ItemDrop.cs" />
     <Compile Include="Assets\Script\DamageNumber.cs" />
     <Compile Include="Assets\Script\Enemy\Dacenta\DacentaDetection.cs" />
     <Compile Include="Assets\Script\bulletPooling.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
-    <Compile Include="Assets\Script\GameManager1.cs" />
     <Compile Include="Assets\Script\Enemy\Blasto\BlastoKill.cs" />
     <Compile Include="Assets\Script\BulletCounter.cs" />
     <Compile Include="Assets\Script\ShakeHealthBar.cs" />
